@@ -13,23 +13,23 @@
         <!--Запрет на автоматический перевод страницы.-->
         <meta name="google" value="notranslate">
         <!--Название вкладки.-->
-        <title>Spotify Premium subscription</title>
+        <title>Discounts On Services</title>
         <!--Шрифты.-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
         <!--CSS обнуление и CSS файл со стилями.-->
-        <link rel="stylesheet" href="../css/resetcss.css" type="text/css">
-        <link rel="stylesheet" href="../css/header-footer.css" type="text/css">
-        <link rel="stylesheet" href="../css/spotify.css" type="text/css">
-        <link rel="stylesheet" href="../css/log-in_popup.css" type="text/css">
-        <link rel="stylesheet" href="../css/sing-up_popup.css" type="text/css">
+        <link rel="stylesheet" href="css/resetcss.css" type="text/css">
+        <link rel="stylesheet" href="css/header-footer.css" type="text/css">
+        <link rel="stylesheet" href="css/discountsonservices.css" type="text/css">
+        <link rel="stylesheet" href="css/log-in_popup.css" type="text/css">
+        <link rel="stylesheet" href="css/sing-up_popup.css" type="text/css">
         <!--Реальный viewport на мобильных устройствах.-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <!--Контейнер, который задаёт максимальную ширину для всего содержимого странички.-->
-        <div class="wrapper">
+       <div class="wrapper">
             <!--Header, в котором находится навигационная панель.-->
             <header class="navbar">
                 <div class="container">
@@ -41,20 +41,20 @@
                             </div>
                         </div>
                         <div class="navbar-logo">
-                            <a href="../index.html" class="logo" id="logo"><img src="../pictures/universal-logo.png" alt="logo" title="DiscountsOnServices"></a>
-                            <a href="../index.html">DiscountsOnServices</a>
+                            <a href="index.html" class="logo" id="logo"><img src="pictures/universal-logo.png" alt="logo" title="DiscountsOnServices"></a>
+                            <a href="index.html">DiscountsOnServices</a>
                         </div>
                         <div class="menu" id="menu">
                             <input type="checkbox" id="drop">
                             <label for="drop"><a>Subscriptions</a></label>
                                 <ul>
-                                    <li><a href="netflix.html">Netflix</a></li>
-                                    <li><a href="youtube.html">YouTube Premium</a></li>
-                                    <li><a href="spotify.html">Spotify</a></li>
+                                    <li><a href="html/netflix.html">Netflix</a></li>
+                                    <li><a href="html/youtube.html">YouTube Premium</a></li>
+                                    <li><a href="html/spotify.html">Spotify</a></li>
                                 </ul>
-                            <a href="FAQ.html">FAQ</a>
-                            <a href="FAQ.html">Support</a>
-                            <a href="about.html">About</a>
+                            <a href="html/FAQ.html">FAQ</a>
+                            <a href="html/FAQ.html">Support</a>
+                            <a href="html/about.html">About</a>
                         </div>
                         <div class="log_in_button">
                             <form class="log-in-btn">
@@ -72,36 +72,36 @@
                     <div class="pnc-container-items">
                         <!--Часть бургер-меню, где расположены навиагционные ссылки по страницам сайта.-->
                         <div class="pncci-nav">
-                            <a href="../index.html">
+                            <a href="index.html">
                                 <svg class="icon-burger">
-                                    <use xlink:href="../pictures/sprite-burger.svg#home"></use>
+                                    <use xlink:href="pictures/sprite-burger.svg#home"></use>
                                 </svg>
                                 Home
                             </a>
-                            <a href="about.html">
+                            <a href="html/about.html">
                                 <svg class="icon-burger">
-                                    <use xlink:href="../pictures/sprite-burger.svg#about"></use>
+                                    <use xlink:href="pictures/sprite-burger.svg#about"></use>
                                 </svg>
                                 About
                             </a>
-                            <a href="FAQ.html">
+                            <a href="html/FAQ.html">
                                 <svg class="icon-burger">
-                                    <use xlink:href="../pictures/sprite-burger.svg#FAQ"></use>
+                                    <use xlink:href="pictures/sprite-burger.svg#FAQ"></use>
                                 </svg>
                                 FAQ
                             </a>
-                            <a href="FAQ.html">
+                            <a href="html/FAQ.html">
                                 <svg class="icon-burger">
-                                    <use xlink:href="../pictures/sprite-burger.svg#support"></use>
+                                    <use xlink:href="pictures/sprite-burger.svg#support"></use>
                                 </svg>
                                 Support
                             </a>
                         </div>
                         <!--Часть бургер-меню, где расположены ссылки на сервисы.-->
                         <div class="pncci-subs">
-                            <a href="netflix.html">Netflix</a>
-                            <a href="youtube.html">YouTube Premium</a>
-                            <a href="spotify.html">Spotify</a>
+                            <a href="html/netflix.html">Netflix</a>
+                            <a href="html/youtube.html">YouTube Premium</a>
+                            <a href="html/spotify.html">Spotify</a>
                         </div>
                         <!--Часть, где расположены кнопки "Login" и "Sing Up".-->
                         <div class="pncci-autorization">
@@ -115,104 +115,92 @@
                     </div>
                 </div>
             </div>
-            <!--Контейнер, в котором расположен выбор подписки на YouTube.-->
-            <div class="spotify-container">
-                <!---->
-                <div class="title">
-                    <h1>Spotify Premium</h1>
-                    <p>Listen and download without ads!<br>
-                        Select the subscription type for a<br> period of <span>12 months:</span></p>
+            <!--Контейнер, в котором находится первый блок сайта.-->
+            <div class="container_block_start">
+                <!--Левый блок-->
+                <div class="block_start_left">
+                    <h1>Start enjoying a benefit of up to 50%</h1>
+                    <p>You have always wanted to get the same product at a special price for you, without haggling &mdash; and it is yours.</p>
+                    <div class="start_using_button"><a href="html/error.html">Start using</a></div>
                 </div>
-                <!--Контейнер, в котором располагаются варианты подписки.-->
-                <div class="subscriptions-container">
-                    <div class="spotify-individual">
-                        <h2>Individual</h2>
-                        <hr>
-                        <div>
-                            <svg class="available">
-                                <use xlink:href="../pictures/sprite-notavailable-available.svg#available"></use>
-                            </svg>
-                            <p>Ad&ndash;free music listening</p>
-                        </div>
-                        <div>
-                            <svg class="available">
-                                <use xlink:href="../pictures/sprite-notavailable-available.svg#available"></use>
-                            </svg>
-                            <p>Play anywhere &mdash; even offline</p>
-                        </div>
-                        <div>
-                            <svg class="available">
-                                <use xlink:href="../pictures/sprite-notavailable-available.svg#available"></use>
-                            </svg>
-                            <p>On&ndash;demand playback</p>
-                        </div>
-                        <div>
-                            <p>$</p>
-                            <p>47</p>
-                        </div>
-                        <!--Кнопка "Get started".-->
-                        <div>
-                            <a href="error.html" target="_blank">Get started</a>
-                        </div>
+                <!--Правый блок-->
+                <div class="block_start_right"> 
+                    <div>
+                        <img src="pictures/girl_with_logos.png">
+                    </div>           
+                </div>
+            </div>
+            <!--Контейнер, в котором находится второй блок сайта (выбор подписки).-->
+            <div class="container_subscription">
+                <!--Заголовок "Choose a subscription".-->
+                <p>Choose a subscription</p>
+                <!--Блок Netflix.-->
+                <div class="netflix">
+                    <div class="netflix-left">
+                        <h1>Netflix subscription</h1>
+                        <p>Netflix is a service that allows you to watch various TV series without ads and in good quality, and also to download them to your device.</p>
+                        <a href="html/netflix.html">Learn more</a>
                     </div>
-                    <div class="spotify-duo">
-                        <h2>Duo</h2>
-                        <hr>
-                        <div>
-                            <svg class="available">
-                                <use xlink:href="../pictures/sprite-notavailable-available.svg#available"></use>
-                            </svg>
-                            <p>2 Premium accounts for a couple under one roof</p>
-                        </div>
-                        <div>
-                            <svg class="available">
-                                <use xlink:href="../pictures/sprite-notavailable-available.svg#available"></use>
-                            </svg>
-                            <p>Ad&ndash;free music listening, play offline, on&ndash;demand playback</p>
-                        </div>
-                        <div>
-                            <p>$</p>
-                            <p>57</p>
-                        </div>
-                        <!--Кнопка "Get started".-->
-                        <div>
-                            <a href="error.html" target="_blank">Get started</a>
-                        </div>
+                    <div class="netflix-right">
+                        <img src="pictures/netflix.png" alt="Netflix logo" title="Netflix logo">
                     </div>
-                    <div class="spotify-family">
-                        <h2>Family</h2>
-                        <hr>
-                        <div>
-                            <svg class="available">
-                                <use xlink:href="../pictures/sprite-notavailable-available.svg#available"></use>
-                            </svg>
-                            <p>6 Premium accounts for family members living under one roof</p>
-                        </div>
-                        <div>
-                            <svg class="available">
-                                <use xlink:href="../pictures/sprite-notavailable-available.svg#available"></use>
-                            </svg>
-                            <p>You can block explicit music</p>
-                        </div>
-                        <div>
-                            <svg class="available">
-                                <use xlink:href="../pictures/sprite-notavailable-available.svg#available"></use>
-                            </svg>
-                            <p>Ad&ndash;free music listening, play offline, on&ndash;demand playback</p>
-                        </div>
-                        <div>
-                            <p>$</p>
-                            <p>77</p>
-                        </div>
-                        <!--Кнопка "Get started".-->
-                        <div>
-                            <a href="error.html" target="_blank">Get started</a>
-                        </div>
+                </div>
+                <!--Блок Spotify.-->
+                <div class="spotify">
+                    <div class="spotify-left">
+                        <h1>Spotify Premium</h1>
+                        <p>Spotify is a music streaming service. Spotify has almost all the tracks and you can listen to them for free, also you can buy a premium subscription and get privileges.</p>
+                        <a href="html/spotify.html">Learn more</a>
+                    </div>
+                    <div class="spotify-right">
+                        <img src="pictures/spotify.png" alt="Spotify logo" title="Spotify logo">
+                    </div>
+                </div>
+                <!--Блок YouTube-->
+                <div class="youtube">
+                    <div class="youtube-left">
+                        <h1>YouTube Premium</h1>
+                        <p>You can watch billions of videos on YouTube. With a YouTube premium subscription, you can download videos and music, as well as watch and listen without ads.</p>
+                        <a href="html/youtube.html">Learn more</a>
+                    </div>
+                    <div class="youtube-right">
+                        <img src="pictures/youtube.png" alt="YouTube logo" title="YouTube logo">
                     </div>
                 </div>
             </div>
-            <!--Контейнер, в котором находится блок сайта Invite friends.-->
+            <!--Контейнер, в котором находится третий блок сайта (How it works?).-->
+            <div class="container_how-it-works">
+                <p>How it works?</p>
+                <div class="how-it-works-items">
+                    <!--Левый блок (How it works?).-->
+                    <div class="how_it_works_left">
+                        <svg class="how_it_works_svg">
+                            <use xlink:href="pictures/sprite-how-it-works.svg#bell"></use>
+                        </svg>
+                        <h1>Step 1</h1>
+                        <p>Enter your account information in the profile on our website.</p>
+                    </div>
+                    <!--Средний блок (How it works?).-->
+                    <div class="how_it_works_middle">
+                        <svg class="how_it_works_svg">
+                            <use xlink:href="pictures/sprite-how-it-works.svg#server"></use>
+                        </svg>
+                        <h1>Step 2</h1>
+                        <p>Select the service and the subscription plan you need.</p>
+                    </div> 
+                    <!--Правый блок (How it works?).-->
+                    <div class="how_it_works_right">
+                        <svg class="how_it_works_svg">
+                            <use xlink:href="pictures/sprite-how-it-works.svg#sucsessful"></use>
+                        </svg>
+                        <h1>Step 3</h1>
+                        <p>Make the payment using PayPal or your credit card. Enjoy!</p>
+                    </div>
+                </div>
+            </div>
+            <!--Контейнер, в котором находится четвертый блок сайта (Invite friends).-->
             <div class="container_invite_friends">
+                <div class="invite_friends_none"></div>
                 <div class="invite_friends">
                     <!--Левая часть блока Invite friends.-->
                     <div class="invite_friends_left">
@@ -228,69 +216,55 @@
                     </div>
                 </div>
             </div>
-            <!--Блок, в котором расположены часто задаваемые вопросы.-->
-            <div class="container-FAQ">
-                <h1>FAQ</h1>
-                <!--Контейнер, в котором находятся сами вопросы.-->
-                <div class="FAQ-container">
-                    <!--Контейнер, в котором находится вопрос.-->
+            <!--Контейнер, в котором находится пятый блок сайта (About Us).-->
+            <div class="container_about_us">
+                <p>About us</p>
+                <div class="about_us-items">
+                    <!--Левый блок-->
+                    <div class="about_us-left">
+                        <img src="pictures/universal-logo.png" alt="logo" title="logo">
+                        <p>We offer you a subscription to various media services at the best price.</p>
+                        <p>We cooperate with several companies to provide you with the opportunity to get a subscription to their services at a favorable price. <br> We are already working with Netflix, Spotify and YouTube, but the list is constantly growing, so don't lose us!</p>
+                        <p>It's simple, fast and economical.</p>
+                    </div>
+                    <!--Правый блок-->
+                    <div class="about_us-right">
+                        <img src="pictures/girl_with_logo_about_us.png" alt="about us" title="about us">
+                    </div>
+                </div>
+            </div>
+            <!--Контейнер, в котором находится шестой блок сайта (FAQ).-->
+            <div class="container_FAQ">
+                <!--Заголовок шестого блока сайта (FAQ).-->
+                <div class="title_FAQ"><p>FAQ</p></div>
+                <!--Блок FAQ.-->
+                <div class="FAQ">
+                    <!--Блоки, в которых находятся вопросы с ответами.-->
                     <div class="FAQ-item">
                         <!--Заголовок вопроса.-->
                         <input class="FAQ-input" type="checkbox" id="FAQ_1">
-                        <label class="FAQ-title" for="FAQ_1">How to pay?
+                        <label class="FAQ-title" for="FAQ_1">The set time has passed, but the invoice has not yet arrived, what should I do?
                             <svg class="close-open-svg">
-                                <use xlink:href="../pictures/sprite-open-close.svg#open"></use>
+                                <use xlink:href="pictures/sprite-open-close.svg#open"></use>
                             </svg>
                             <svg class="close-open-svg">
-                                <use xlink:href="../pictures/sprite-open-close.svg#close"></use>
+                                <use xlink:href="pictures/sprite-open-close.svg#close"></use>
                             </svg>
                         </label>
                         <!--Ответ на вопрос.-->
                         <div class="FAQ-text">
-                            <p>Payment can be made via PayPal or bank card.</p>
+                            <p>Don't panic. Sometimes services need a lot of time to process your request. If you have waited more than 24 hours, then write to the support service. Support is available 24 hours a day.</p>
                         </div>
                     </div>
                     <div class="FAQ-item">
                         <!--Заголовок вопроса.-->
                         <input class="FAQ-input" type="checkbox" id="FAQ_2">
-                        <label class="FAQ-title" for="FAQ_2">Is my payment card information securely protected?
+                        <label class="FAQ-title" for="FAQ_2">Can I make changes to my Netflix/YouTube/Spotify accounts after registering here?
                             <svg class="close-open-svg">
-                                <use xlink:href="../pictures/sprite-open-close.svg#open"></use>
+                                <use xlink:href="pictures/sprite-open-close.svg#open"></use>
                             </svg>
                             <svg class="close-open-svg">
-                                <use xlink:href="../pictures/sprite-open-close.svg#close"></use>
-                            </svg>
-                        </label>
-                        <!--Ответ на вопрос.-->
-                        <div class="FAQ-text">
-                            <p>Your card information is processed and stored (if you have given permission to do so) in large and secure payment systems. We do not store information about your bank account. All payments are made through major payment systems which provide a high level of protection.</p>
-                        </div>
-                    </div>
-                    <div class="FAQ-item">
-                        <!--Заголовок вопроса.-->
-                        <input class="FAQ-input" type="checkbox" id="FAQ_3">
-                        <label class="FAQ-title" for="FAQ_3">Do you send a payment invoice by email?
-                            <svg class="close-open-svg">
-                                <use xlink:href="../pictures/sprite-open-close.svg#open"></use>
-                            </svg>
-                            <svg class="close-open-svg">
-                                <use xlink:href="../pictures/sprite-open-close.svg#close"></use>
-                            </svg>
-                        </label>
-                        <!--Ответ на вопрос.-->
-                        <div class="FAQ-text">
-                            <p>Yes. The invoice will be sent to your email automatically after payment.</p>
-                        </div>
-                    </div>
-                    <div class="FAQ-item">
-                        <!--Заголовок вопроса.-->
-                        <input class="FAQ-input" type="checkbox" id="FAQ_4">
-                        <label class="FAQ-title" for="FAQ_4">Can I make changes to my Spotify account after registering here?
-                            <svg class="close-open-svg">
-                                <use xlink:href="../pictures/sprite-open-close.svg#open"></use>
-                            </svg>
-                            <svg class="close-open-svg">
-                                <use xlink:href="../pictures/sprite-open-close.svg#close"></use>
+                                <use xlink:href="pictures/sprite-open-close.svg#close"></use>
                             </svg>
                         </label>
                         <!--Ответ на вопрос.-->
@@ -300,62 +274,108 @@
                     </div>
                     <div class="FAQ-item">
                         <!--Заголовок вопроса.-->
-                        <input class="FAQ-input" type="checkbox" id="FAQ_6">
-                        <label class="FAQ-title" for="FAQ_6">Can I get my money back?
+                        <input class="FAQ-input" type="checkbox" id="FAQ_3">
+                        <label class="FAQ-title" for="FAQ_3">Can I add a phone number for password recovery?
                             <svg class="close-open-svg">
-                                <use xlink:href="../pictures/sprite-open-close.svg#open"></use>
+                                <use xlink:href="pictures/sprite-open-close.svg#open"></use>
                             </svg>
                             <svg class="close-open-svg">
-                                <use xlink:href="../pictures/sprite-open-close.svg#close"></use>
+                                <use xlink:href="pictures/sprite-open-close.svg#close"></use>
                             </svg>
                         </label>
                         <!--Ответ на вопрос.-->
                         <div class="FAQ-text">
-                            <p>Subscription can be canceled at any time. We pay for your subscription every month, so you can conveniently get a refund for unused months.<br> For example: you used a Spotify Premium subscription for 8 months, but paid for 12. You will be refunded the amount for 4 months.</p>
+                            <p>Yes. The system will ask you to enter the number during registration.</p>
                         </div>
                     </div>
+                    <div class="FAQ-item">
+                        <!--Заголовок вопроса.-->
+                        <input class="FAQ-input" type="checkbox" id="FAQ_4">
+                        <label class="FAQ-title" for="FAQ_4">How soon will I receive the account information I ordered?
+                            <svg class="close-open-svg">
+                                <use xlink:href="pictures/sprite-open-close.svg#open"></use>
+                            </svg>
+                            <svg class="close-open-svg">
+                                <use xlink:href="pictures/sprite-open-close.svg#close"></use>
+                            </svg>
+                        </label>
+                        <!--Ответ на вопрос.-->
+                        <div class="FAQ-text">
+                            <p>Usually, you will get all the information instantly. But, sometimes, servers need more time to process the information, so it can take several hours. However, do not worry if this happens, it is normal.</p>
+                        </div>
+                    </div>
+                    <div class="FAQ-item">
+                        <!--Заголовок вопроса.-->
+                        <input class="FAQ-input" type="checkbox" id="FAQ_5">
+                        <label class="FAQ-title" for="FAQ_5">How to pay?
+                            <svg class="close-open-svg">
+                                <use xlink:href="pictures/sprite-open-close.svg#open"></use>
+                            </svg>
+                            <svg class="close-open-svg">
+                                <use xlink:href="pictures/sprite-open-close.svg#close"></use>
+                            </svg>
+                        </label>
+                        <!--Ответ на вопрос.-->
+                        <div class="FAQ-text">
+                            <p>Payment can be made via PayPal or bank card.</p>
+                        </div>
+                    </div>  
                 </div>
                 <!--Кнопка Support.-->
-                <form action="FAQ.html">
+                <form action="html/FAQ.html">
                     <button>Support</button>
-                </form>
-                <!--Пустой контейнер, чтобы задать отступ от кнопки до футера.-->
+                </form> 
                 <div class="FAQ-none-end"></div>
+            </div>
+            <!--Контейнер, в котором находится седьмой блок сайта (request).-->
+            <div class="container_request">
+                <!--Блок request-->
+                <div class="block_request">
+                    <!--Внутри расположены ещё два контейнера, в первом текст, во втором кнопка.-->
+                    <div class="block_request-text">
+                        <h1>Request for an additional subscription that was not found here</h1>
+                        <p>Leave a request to add support for a service that we don't have yet and we will try to add it as soon as possible! (for example: Disney, Amazon Prime, Microsoft Office, Microsoft Windows).</p>
+                    </div>
+                    <div class="block_request-right">
+                        <a href="html/error.html" target="_blank">Request</a>
+                    </div>
+                </div>
+                <div class="container_request-clean"></div>
             </div>
             <!--Контейнер, в котором находится footer.-->
             <footer>
                 <hr>
                 <div class="footer-brand">
-                    <a href="../index.html"><img src="../pictures/universal-logo.png" alt="logo"></a>
-                    <a href="../index.html">DiscountsOnServices</a>
+                    <a href="index.html"><img src="pictures/universal-logo.png" alt="logo"></a>
+                    <a href="index.html">DiscountsOnServices</a>
                     <p>It's simple, fast and<br> economical!</p>
                 </div>
                 <div class="footer-navigation">
                     <p>Subscriptions</p>
-                    <a href="netflix.html">Netflix</a>
-                    <a href="youtube.html">YouTube Premium</a>
-                    <a href="spotify.html">Spotify</a>
+                    <a href="html/netflix.html">Netflix</a>
+                    <a href="html/youtube.html">YouTube Premium</a>
+                    <a href="html/spotify.html">Spotify</a>
                     <p>Site navigation</p>
-                    <a href="about.html">About us</a>
-                    <a href="FAQ.html">FAQ</a>
-                    <a href="FAQ.html">Support</a> 
+                    <a href="html/about.html">About us</a>
+                    <a href="html/FAQ.html">FAQ</a>
+                    <a href="html/FAQ.html">Support</a> 
                  </div>
                  <div class="footer-messagers_1">
-                    <a href="error.html" target="_blank">
+                    <a href="html/error.html" target="_blank">
                         <svg class="messengers-svg">
-                            <use xlink:href="../pictures/sprite-messengers-svg.svg#telegram-footer"></use>
+                            <use xlink:href="pictures/sprite-messengers-svg.svg#telegram-footer"></use>
                         </svg>
                     </a>
                 </div>
                 <div class="footer-messagers_2">
-                    <a href="error.html" target="_blank">
+                    <a href="html/error.html" target="_blank">
                         <svg class="messengers-svg">
-                            <use xlink:href="../pictures/sprite-messengers-svg.svg#whatsapp-footer"></use>
+                            <use xlink:href="pictures/sprite-messengers-svg.svg#whatsapp-footer"></use>
                         </svg>
                     </a>
                 </div>
                 <div class="footer-info">
-                    <a href="error.html" target="_blank">Privacy Policy</a>
+                    <a href="html/error.html" target="_blank">Privacy Policy</a>
                     <p>Copyright 2022 &copy; All Rights Reserved</p>
                     <p>Developed by Andrew Shket</p> 
                  </div>    
@@ -364,7 +384,7 @@
             <div class="log_in_background">
                 <div class="log_in_wrapper">
                     <svg class="close-popup">
-                        <use xlink:href="../pictures/sprite-login.svg#closee"></use>
+                        <use xlink:href="pictures/sprite-login.svg#closee"></use>
                     </svg>
                     <!--Заголовок popup'а-->
                     <div class="title-log_in">
@@ -395,28 +415,28 @@
                         <form action="https://www.google.ru" target="_blank">
                             <button>
                                 <svg class="google">
-                                    <use xlink:href="../pictures/sprite-login.svg#google"></use>
+                                    <use xlink:href="pictures/sprite-login.svg#google"></use>
                                 </svg>
                             </button>
                         </form>
                         <form action="https://www.facebook.com" target="_blank">
                             <button>
                                 <svg class="facebook">
-                                    <use xlink:href="../pictures/sprite-login.svg#facebook"></use>
+                                    <use xlink:href="pictures/sprite-login.svg#facebook"></use>
                                 </svg>
                             </button>
                         </form>
                         <form action="https://www.apple.com" target="_blank">
                             <button>
                                 <svg class="apple">
-                                    <use xlink:href="../pictures/sprite-login.svg#apple"></use>
+                                    <use xlink:href="pictures/sprite-login.svg#apple"></use>
                                 </svg>
                             </button>
                         </form>
                     </div>
                     <!--Контейнер с информацией.-->
                     <div class="info-log_in">
-                        <p>Protected by reCAPTCHA and subject to the <span><a href="../html/error.html">Google Privacy Policy</a></span> and <span><a href="../html/error.html">Terms of Service.</a></span></p>   
+                        <p>Protected by reCAPTCHA and subject to the <span><a href="html/error.html">Google Privacy Policy</a></span> and <span><a href="html/error.html">Terms of Service.</a></span></p>   
                     </div>
                 </div>
             </div>
@@ -424,7 +444,7 @@
             <div class="sing_up_background">
                 <div class="sing_up_wrapper">
                     <svg class="close-popup_sing_up">
-                        <use xlink:href="../pictures/sprite-login.svg#closee"></use>
+                        <use xlink:href="pictures/sprite-login.svg#closee"></use>
                     </svg>
                     <!--Заголовок popup'а-->
                     <div class="title-sing_up">
@@ -460,33 +480,33 @@
                         <form action="https://www.google.ru" target="_blank">
                             <button>
                                 <svg class="google">
-                                    <use xlink:href="../pictures/sprite-login.svg#google"></use>
+                                    <use xlink:href="pictures/sprite-login.svg#google"></use>
                                 </svg>
                             </button>
                         </form>
                         <form action="https://www.facebook.com" target="_blank">
                             <button>
                                 <svg class="facebook">
-                                    <use xlink:href="../pictures/sprite-login.svg#facebook"></use>
+                                    <use xlink:href="pictures/sprite-login.svg#facebook"></use>
                                 </svg>
                             </button>
                         </form>
                         <form action="https://www.apple.com" target="_blank">
                             <button>
                                 <svg class="apple">
-                                    <use xlink:href="../pictures/sprite-login.svg#apple"></use>
+                                    <use xlink:href="pictures/sprite-login.svg#apple"></use>
                                 </svg>
                             </button>
                         </form>
                     </div>
                 </div>
             </div>
-        </div>  
-    <!--Скрипт, который копирует ссылку в блоке "Invite Friends".-->
-    <script type='text/javascript' src='../javascript/invitefriends.js'></script>
-    <!--Скрипт, в котором бургер-меню.-->
-    <script type='text/javascript' src='../javascript/burger-menu.js'></script>
+       </div>
+    <!--Скрипт c бургер-меню.-->
+    <script src="javascript/burger-menu.js"></script>
     <!--Скрипт popup'а с регистрацией.-->
-    <script src="../javascript/popup-registration.js"></script>
+    <script src="javascript/popup-registration.js"></script>
+    <!--Скрипт, который копирует ссылку на сайт в блоке "Invite Friends".-->
+    <script src="javascript/invitefriends.js"></script>
     </body>
 </html>    
