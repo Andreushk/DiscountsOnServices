@@ -1,0 +1,367 @@
+/*Контейнер, в котором расположена первая и основная часть информации о компании.*/
+main {
+    width: 100%;
+    background-color: #ECF3FB;
+}
+
+/*Заголовок.*/
+.about-us-start h1 {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: center;
+    color: #171717;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+/*Контейнер, в котором содеражится информация о компании и картинка.*/
+.about-us-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 83.33%;
+    margin: 0 auto;
+}
+
+.about-us-info div:first-of-type {
+    -webkit-box-flex: 49.33%;
+        -ms-flex: 49.33% 0 0px;
+            flex: 49.33% 0 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    background: #fff;
+    -webkit-box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
+            box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
+    border-radius: 32px;
+}
+
+.about-us-info div:first-of-type p {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #333333;
+    margin-left: 10.14%;
+    margin-right: 10.14%;
+}
+
+.about-us-info div:first-of-type p:first-of-type {
+    margin-top: 60px;
+}
+
+.about-us-info div:first-of-type p:last-of-type {
+    margin-top: 32px;
+    margin-bottom: 60px;
+}
+
+.about-us-info div:first-of-type span {
+    color: #1749B3;
+    font-weight: 500;
+    -webkit-animation: motto 4s infinite alternate;
+            animation: motto 4s infinite alternate;
+}
+
+@-webkit-keyframes motto
+{
+    from { color: #1749B3; }
+    to { color: #b61515; }
+}
+
+@keyframes motto
+{
+    from { color: #1749B3; }
+    to { color: #b61515; }
+}
+
+.about-us-info div:last-of-type {
+    -webkit-box-flex: 49.33%;
+        -ms-flex: 49.33% 0 0px;
+            flex: 49.33% 0 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    background: #fff;
+    -webkit-box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
+            box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
+    border-radius: 32px;
+    position: relative;
+}
+
+.about-us-info div:last-of-type img {
+    width: 75%;
+    position: absolute; 
+    left: 0; top: 0; bottom: 0; right: 0; 
+    margin: auto;
+}
+
+@media all and (max-width: 960px) {
+    .about-us-info {
+        width: 91.67%;
+    }
+    .about-us-start h1 {
+        padding-top: 65px;
+        padding-bottom: 45px;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .about-us-info div:first-of-type p {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    
+    .about-us-info div:first-of-type p:first-of-type {
+        margin-top: 30px;
+    }
+    
+    .about-us-info div:first-of-type p:last-of-type {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media all and (max-width: 780px) {
+    .about-us-start h1 {
+        font-size: 25px;
+        padding-top: 48px;
+        padding-bottom: 25px;
+    }
+    .about-us-info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 85%;
+    }
+    .about-us-info div:first-of-type {
+        -webkit-box-flex: 100%;
+            -ms-flex: 100% 0 0px;
+                flex: 100% 0 0;
+        border-radius: 24px;
+        margin-bottom: 16px;
+    }  
+    .about-us-info div:last-of-type {
+        -webkit-box-flex: 100%;
+            -ms-flex: 100% 0 0px;
+                flex: 100% 0 0;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        border-radius: 24px;
+    }
+    .about-us-info div:last-of-type img {
+        width: 50%; 
+        position: relative; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .navbar__wrap {
+        width: 85%;
+    }
+}
+
+@media all and (max-width: 660px) {
+    .about-us-info div:last-of-type img {
+        width: 60%; 
+    }
+}
+
+@media all and (max-width: 550px) {
+    .about-us-info div:last-of-type img {
+        width: 80%; 
+    }
+}
+
+@media all and (max-width: 450px) {
+    .about-us-info div:last-of-type img {
+        width: 90%; 
+    }
+    .about-us-info {
+        width: 87.20%;
+    }
+    .navbar__wrap {
+        width: 87.20%;
+    }
+}
+
+/*Заголовок.*/
+.about-us-map h1 {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: center;
+    color: #171717;
+    padding-top: 80px;
+    padding-bottom: 55px;
+}
+
+/*Контейнер, в котором расположена карта и контакты.*/
+.about-us-map-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 83.33%;
+    margin: 0 auto;
+}
+
+/*Контейнер, в котором находятся контакты компании.*/
+.about-us-contacts {
+    -webkit-box-flex: 31.67%;
+        -ms-flex: 31.67% 0 0px;
+            flex: 31.67% 0 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 25px;
+    margin-top: 115px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 200px;
+    border-radius: 32px;
+    -webkit-box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+            box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+    background-color: #fff;
+}
+
+.about-us-contacts div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+}
+
+.about-us-contacts div:first-of-type {
+    margin-top: 0;
+}
+
+.about-us-contacts a {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 15px;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 130%;
+    color: #171717;
+    text-decoration: none;
+}
+
+.about-us-contacts p {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 15px;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 130%;
+    color: #171717;
+    text-decoration: none;
+}
+
+.about-us-contacts svg {
+    fill: #1749B3;
+    width: 24px;
+    height: 24px;
+}
+
+.about-us-contacts:hover svg {
+    fill: #b61515;
+    scale: 1.1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+/*Контейнер, в котором находится карта.*/
+.about-us-contacts-map {
+    -webkit-box-flex: 62%;
+        -ms-flex: 62% 0 0px;
+            flex: 62% 0 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 470px;
+}
+
+/*Контейнер, который выполняет роль отступа после блока с картой и футером.*/
+.none {
+    width: 100%;
+    height: 120px;
+}
+
+@media all and (max-width: 1300px) {
+    .about-us-map-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        width: 83.33%;
+    }
+    .about-us-contacts {
+        -webkit-box-flex: 100%;
+            -ms-flex: 100% 0 0px;
+                flex: 100% 0 0;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        padding: 25px;
+        margin-top: 16px;
+        border-radius: 24px;
+    }
+    .about-us-contacts div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 20px;
+    }
+    .about-us-contacts-map {
+        -webkit-box-flex: 100%;
+            -ms-flex: 100% 0 0px;
+                flex: 100% 0 0;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+    }
+}
+
+@media all and (max-width: 780px) {
+    .about-us-map h1 {
+        font-size: 25px;
+        padding-top: 48px;
+        padding-bottom: 25px;
+    }
+    .none {
+        height: 80px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .about-us-map-container {
+        width: 87.20%;
+    }
+}

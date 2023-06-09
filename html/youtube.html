@@ -1,0 +1,442 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--Включение сглаживания шрифтов.-->
+        <meta http-equiv="cleartype" content="on"/>
+        <!--Отключение автоматического изменения масштаба страницы на мобильных устройствах.-->
+        <meta name="HandheldFriendly" content="True"/>
+        <!--Отключение автоматического обнаружения номеров телефона, адресов.-->
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="format-detection" content="address=no"/>
+        <meta name="x-rim-auto-match" content="none" forua="true">
+        <!--Запрет на автоматический перевод страницы.-->
+        <meta name="google" value="notranslate">
+        <!--Название вкладки.-->
+        <title>YouTube Premium subscription</title>
+        <!--Шрифты.-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <!--CSS обнуление и CSS файл со стилями.-->
+        <link rel="stylesheet" href="../css/resetcss.css" type="text/css">
+        <link rel="stylesheet" href="../css/header-footer.css" type="text/css">
+        <link rel="stylesheet" href="../css/youtube.css" type="text/css">
+        <link rel="stylesheet" href="../css/log-in_popup.css" type="text/css">
+        <link rel="stylesheet" href="../css/sing-up_popup.css" type="text/css">
+        <!--Реальный viewport на мобильных устройствах.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!--Контейнер, который задаёт максимальную ширину для всего содержимого странички.-->
+        <div class="wrapper">
+            <!--Header, в котором находится навигационная панель.-->
+            <header class="navbar">
+                <div class="container">
+                    <div class="navbar__wrap">
+                        <div class="hamb">
+                            <div class="hamb__field" id="hamb">
+                                <span class="bar"></span> <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+                        <div class="navbar-logo">
+                            <a href="../discountsonservices.html" class="logo" id="logo"><img src="../pictures/universal-logo.png" alt="logo" title="DiscountsOnServices"></a>
+                            <a href="../discountsonservices.html">DiscountsOnServices</a>
+                        </div>
+                        <div class="menu" id="menu">
+                            <input type="checkbox" id="drop">
+                            <label for="drop"><a>Subscriptions</a></label>
+                                <ul>
+                                    <li><a href="netflix.html">Netflix</a></li>
+                                    <li><a href="youtube.html">YouTube Premium</a></li>
+                                    <li><a href="spotify.html">Spotify</a></li>
+                                </ul>
+                            <a href="FAQ.html">FAQ</a>
+                            <a href="FAQ.html">Support</a>
+                            <a href="about.html">About</a>
+                        </div>
+                        <div class="log_in_button">
+                            <form class="log-in-btn">
+                                <button>Log In</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!--Само содержимое бургер-меню.-->
+            <div class="popup" id="popup">
+                <!--Контейнер, в котором находится всё содержимое.-->
+                <div class="popup-nav-container">
+                    <!--Контейнер, в котором находятся блоки с информацией о сайте.-->
+                    <div class="pnc-container-items">
+                        <!--Часть бургер-меню, где расположены навиагционные ссылки по страницам сайта.-->
+                        <div class="pncci-nav">
+                            <a href="../discountsonservices.html">
+                                <svg class="icon-burger">
+                                    <use xlink:href="../pictures/sprite-burger.svg#home"></use>
+                                </svg>
+                                Home
+                            </a>
+                            <a href="about.html">
+                                <svg class="icon-burger">
+                                    <use xlink:href="../pictures/sprite-burger.svg#about"></use>
+                                </svg>
+                                About
+                            </a>
+                            <a href="FAQ.html">
+                                <svg class="icon-burger">
+                                    <use xlink:href="../pictures/sprite-burger.svg#FAQ"></use>
+                                </svg>
+                                FAQ
+                            </a>
+                            <a href="FAQ.html">
+                                <svg class="icon-burger">
+                                    <use xlink:href="../pictures/sprite-burger.svg#support"></use>
+                                </svg>
+                                Support
+                            </a>
+                        </div>
+                        <!--Часть бургер-меню, где расположены ссылки на сервисы.-->
+                        <div class="pncci-subs">
+                            <a href="netflix.html">Netflix</a>
+                            <a href="youtube.html">YouTube Premium</a>
+                            <a href="spotify.html">Spotify</a>
+                        </div>
+                        <!--Часть, где расположены кнопки "Login" и "Sing Up".-->
+                        <div class="pncci-autorization">
+                            <form class="log-in-btn">
+                                <button>Log In</button>
+                            </form>
+                            <form class="sing-up-btn">
+                                <button>Sing Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Контейнер, в котором расположен выбор подписки на YouTube.-->
+            <div class="youtube-container">
+                <!--Заголовок.-->
+                <h1>YouTube Premium</h1>
+                <p>Watch, listen and download without ads!<br>
+                   Select the subscription type for a<br> period of <span>12 months:</span></p>
+                <!--Контейнер, в котором располагаются варианты подписки.-->
+                <div class="subscriptions-container">
+                    <div class="youtube-music">
+                        <h2><span>YouTube</span> Music</h2>
+                        <hr>
+                        <div>
+                            <svg class="available">
+                                <use xlink:href="../pictures/sprite-notavailable-available.svg#available"></use>
+                            </svg>
+                            <p>Listen to music without ads, in the background and offline</p>
+                        </div>
+                        <div>
+                            <p>$</p>
+                            <p>50</p>
+                        </div>
+                        <!--Кнопка "Get started".-->
+                        <div>
+                            <a href="error.html" target="_blank">Get started</a>
+                        </div>
+                    </div>
+                    <div class="youtube-premium">
+                        <h2><span>YouTube</span> Premium</h2>
+                        <hr>
+                        <div>
+                            <svg class="available">
+                                <use xlink:href="../pictures/sprite-notavailable-available.svg#available"></use>
+                            </svg>
+                            <p>YouTube and YouTube Music without ads, in the background and offline</p>
+                        </div>
+                        <div>
+                            <p>$</p>
+                            <p>70</p>
+                        </div>
+                        <!--Кнопка "Get started".-->
+                        <div>
+                            <a href="error.html" target="_blank">Get started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Контейнер, в котором находится блок сайта Invite friends.-->
+            <div class="container_invite_friends">
+                <div class="invite_friends">
+                    <!--Левая часть блока Invite friends.-->
+                    <div class="invite_friends_left">
+                        <h1>Invite friends</h1>
+                        <p>Copy the invitation link, send it to your friend and get a 50% discount on a premium subscription for Spotify or YouTube!</p>
+                    </div>
+                    <!--Правая часть блока Invite friends.-->
+                    <div class="invite_friends_right">
+                        <div class="invite_friends_right-item" id="copytext">
+                            <p>Click on the link</p>
+                            <a type="text" id="clickboardInput" title="the link to our website will be copied">Discounts On Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Блок, в котором расположены часто задаваемые вопросы.-->
+            <div class="container-FAQ">
+                <h1>FAQ</h1>
+                <!--Контейнер, в котором находятся сами вопросы.-->
+                <div class="FAQ-container">
+                    <!--Контейнер, в котором находится вопрос.-->
+                    <div class="FAQ-item">
+                        <!--Заголовок вопроса.-->
+                        <input class="FAQ-input" type="checkbox" id="FAQ_1">
+                        <label class="FAQ-title" for="FAQ_1">How to pay?
+                            <svg class="close-open-svg">
+                                <use xlink:href="../pictures/sprite-open-close.svg#open"></use>
+                            </svg>
+                            <svg class="close-open-svg">
+                                <use xlink:href="../pictures/sprite-open-close.svg#close"></use>
+                            </svg>
+                        </label>
+                        <!--Ответ на вопрос.-->
+                        <div class="FAQ-text">
+                            <p>Payment can be made via PayPal or bank card.</p>
+                        </div>
+                    </div>
+                    <div class="FAQ-item">
+                        <!--Заголовок вопроса.-->
+                        <input class="FAQ-input" type="checkbox" id="FAQ_2">
+                        <label class="FAQ-title" for="FAQ_2">Is my payment card information securely protected?
+                            <svg class="close-open-svg">
+                                <use xlink:href="../pictures/sprite-open-close.svg#open"></use>
+                            </svg>
+                            <svg class="close-open-svg">
+                                <use xlink:href="../pictures/sprite-open-close.svg#close"></use>
+                            </svg>
+                        </label>
+                        <!--Ответ на вопрос.-->
+                        <div class="FAQ-text">
+                            <p>Your card information is processed and stored (if you have given permission to do so) in large and secure payment systems. We do not store information about your bank account. All payments are made through major payment systems which provide a high level of protection.</p>
+                        </div>
+                    </div>
+                    <div class="FAQ-item">
+                        <!--Заголовок вопроса.-->
+                        <input class="FAQ-input" type="checkbox" id="FAQ_3">
+                        <label class="FAQ-title" for="FAQ_3">Do you send a payment invoice by email?
+                            <svg class="close-open-svg">
+                                <use xlink:href="../pictures/sprite-open-close.svg#open"></use>
+                            </svg>
+                            <svg class="close-open-svg">
+                                <use xlink:href="../pictures/sprite-open-close.svg#close"></use>
+                            </svg>
+                        </label>
+                        <!--Ответ на вопрос.-->
+                        <div class="FAQ-text">
+                            <p>Yes. The invoice will be sent to your email automatically after payment.</p>
+                        </div>
+                    </div>
+                    <div class="FAQ-item">
+                        <!--Заголовок вопроса.-->
+                        <input class="FAQ-input" type="checkbox" id="FAQ_4">
+                        <label class="FAQ-title" for="FAQ_4">Can I make changes to my Youtube account after registering here?
+                            <svg class="close-open-svg">
+                                <use xlink:href="../pictures/sprite-open-close.svg#open"></use>
+                            </svg>
+                            <svg class="close-open-svg">
+                                <use xlink:href="../pictures/sprite-open-close.svg#close"></use>
+                            </svg>
+                        </label>
+                        <!--Ответ на вопрос.-->
+                        <div class="FAQ-text">
+                            <p>Yes, you can always change email, passwords and other information associated with your account.</p>
+                        </div>
+                    </div>
+                    <div class="FAQ-item">
+                        <!--Заголовок вопроса.-->
+                        <input class="FAQ-input" type="checkbox" id="FAQ_6">
+                        <label class="FAQ-title" for="FAQ_6">Can I get my money back?
+                            <svg class="close-open-svg">
+                                <use xlink:href="../pictures/sprite-open-close.svg#open"></use>
+                            </svg>
+                            <svg class="close-open-svg">
+                                <use xlink:href="../pictures/sprite-open-close.svg#close"></use>
+                            </svg>
+                        </label>
+                        <!--Ответ на вопрос.-->
+                        <div class="FAQ-text">
+                            <p>Subscription can be canceled at any time. We pay for your subscription every month, so you can conveniently get a refund for unused months.<br> For example: you used a YouTube Premium subscription for 8 months, but paid for 12. You will be refunded the amount for 4 months.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Кнопка Support.-->
+                <form action="FAQ.html">
+                    <button>Support</button>
+                </form>
+                <!--Пустой контейнер, чтобы задать отступ от кнопки до футера.-->
+                <div class="FAQ-none-end"></div>
+            </div>
+            <!--Контейнер, в котором находится footer.-->
+            <footer>
+                <hr>
+                <div class="footer-brand">
+                    <a href="../discountsonservices.html"><img src="../pictures/universal-logo.png" alt="logo"></a>
+                    <a href="../discountsonservices.html">DiscountsOnServices</a>
+                    <p>It's simple, fast and<br> economical!</p>
+                </div>
+                <div class="footer-navigation">
+                    <p>Subscriptions</p>
+                    <a href="netflix.html">Netflix</a>
+                    <a href="youtube.html">YouTube Premium</a>
+                    <a href="spotify.html">Spotify</a>
+                    <p>Site navigation</p>
+                    <a href="about.html">About us</a>
+                    <a href="FAQ.html">FAQ</a>
+                    <a href="FAQ.html">Support</a> 
+                 </div>
+                 <div class="footer-messagers_1">
+                    <a href="error.html" target="_blank">
+                        <svg class="messengers-svg">
+                            <use xlink:href="../pictures/sprite-messengers-svg.svg#telegram-footer"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer-messagers_2">
+                    <a href="error.html" target="_blank">
+                        <svg class="messengers-svg">
+                            <use xlink:href="../pictures/sprite-messengers-svg.svg#whatsapp-footer"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <a href="error.html" target="_blank">Privacy Policy</a>
+                    <p>Copyright 2022 &copy; All Rights Reserved</p>
+                    <p>Developed by Andrew Shket</p> 
+                 </div>    
+            </footer>
+            <!--Popup "Log In"-->
+            <div class="log_in_background">
+                <div class="log_in_wrapper">
+                    <svg class="close-popup">
+                        <use xlink:href="../pictures/sprite-login.svg#closee"></use>
+                    </svg>
+                    <!--Заголовок popup'а-->
+                    <div class="title-log_in">
+                        <p>Log In</p>
+                        <p>New user? <span><a class="sing-up-btn">Create an account</a></span></p>
+                    </div>
+                    <!--Контейнер, в котором расположна "форма" для регистрации.-->
+                    <div class="form-log_in">
+                        <form method=get action='#'>
+                            <label for="Email">Email Address</label><br>
+                            <input type="text" name="Email" placeholder="Enter your e&ndash;mail" autocomplete="off"><br><br><br>
+                            <label for="password">Password</label><br>
+                            <input type="text" name="password" placeholder="*********" autocomplete="off"><br>
+                            <div>
+                                <span class="forgot_password"><a href="error.html">Forgot password?</a></span>
+                                <button type="submit" id="log-in-btn">Log In</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--Разделитель контента.-->
+                    <div class="delimiter-log_in">
+                        <hr>
+                        <p>Or sign in with</p>
+                        <hr>
+                    </div>
+                    <!--Контейнер, в котором расположены кнопки входа при помощи соц. сетей.-->
+                    <div class="entering_with_socmed">
+                        <form action="https://www.google.ru" target="_blank">
+                            <button>
+                                <svg class="google">
+                                    <use xlink:href="../pictures/sprite-login.svg#google"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <form action="https://www.facebook.com" target="_blank">
+                            <button>
+                                <svg class="facebook">
+                                    <use xlink:href="../pictures/sprite-login.svg#facebook"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <form action="https://www.apple.com" target="_blank">
+                            <button>
+                                <svg class="apple">
+                                    <use xlink:href="../pictures/sprite-login.svg#apple"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <!--Контейнер с информацией.-->
+                    <div class="info-log_in">
+                        <p>Protected by reCAPTCHA and subject to the <span><a href="../html/error.html">Google Privacy Policy</a></span> and <span><a href="../html/error.html">Terms of Service.</a></span></p>   
+                    </div>
+                </div>
+            </div>
+            <!--Popup "Sing Up"-->
+            <div class="sing_up_background">
+                <div class="sing_up_wrapper">
+                    <svg class="close-popup_sing_up">
+                        <use xlink:href="../pictures/sprite-login.svg#closee"></use>
+                    </svg>
+                    <!--Заголовок popup'а-->
+                    <div class="title-sing_up">
+                        <h1>Create an account</h1>
+                        <p>Already have an account? <span><a class="sign_in_in_sing_up">Sign In</a></span></p>
+                    </div>
+                    <!---->
+                    <div class="form-sing_up">
+                        <form method=get action='#'>
+                            <label for="Email">User name</label><br>
+                            <input type="text" name="Email" placeholder="Enter your name" autocomplete="off"><br><br><br>
+                            <label for="Email">Email Address</label><br>
+                            <input type="text" name="Email" placeholder="Enter your e&ndash;mail" autocomplete="off"><br><br><br>
+                            <label for="password">Password</label><br>
+                            <input type="text" name="password" placeholder="*********" autocomplete="off"><br>
+                            <div>
+                                <label for="agree">By creating an account you agree to our <span> <a href="error.html">Policy and Terms of Service.</a></span></label>
+                                <input name="agree" type="checkbox" checked>
+                            </div>
+                            <div>
+                                <button type="submit" id="sing-up-btn">Sing Up</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--Разделитель контента.-->
+                    <div class="delimiter-sing_up">
+                        <hr>
+                        <p>Or sign in with</p>
+                        <hr>
+                    </div>
+                    <!--Контейнер, в котором расположены кнопки входа при помощи соц. сетей.-->
+                    <div class="entering_with_socmed-sing_up">
+                        <form action="https://www.google.ru" target="_blank">
+                            <button>
+                                <svg class="google">
+                                    <use xlink:href="../pictures/sprite-login.svg#google"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <form action="https://www.facebook.com" target="_blank">
+                            <button>
+                                <svg class="facebook">
+                                    <use xlink:href="../pictures/sprite-login.svg#facebook"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <form action="https://www.apple.com" target="_blank">
+                            <button>
+                                <svg class="apple">
+                                    <use xlink:href="../pictures/sprite-login.svg#apple"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    <!--Скрипт, который копирует ссылку в блоке "Invite Friends".-->
+    <script type='text/javascript' src='../javascript/invitefriends.js'></script>
+    <!--Скрипт, в котором бургер-меню.-->
+    <script type='text/javascript' src='../javascript/burger-menu.js'></script>
+    <!--Скрипт popup'а с регистрацией.-->
+    <script src="../javascript/popup-registration.js"></script>
+    </body>
+</html>    

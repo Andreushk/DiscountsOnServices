@@ -1,0 +1,940 @@
+/*Подключение шрифтов*/
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/GothamPro-Black.woff2') format('woff2'),
+        url('../fonts/GothamPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/GothamPro-Bold.woff2') format('woff2'),
+        url('../fonts/GothamPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/GothamPro-Light.woff2') format('woff2'),
+        url('../fonts/GothamPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/GothamPro.woff2') format('woff2'),
+        url('../fonts/GothamPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/GothamPro-Medium.woff2') format('woff2'),
+        url('../fonts/GothamPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*Контейнер, который задаёт максимальную ширину для всего содержимого странички.*/
+.wrapper {
+    max-width: 1440px;  
+    margin: 0 auto;
+}
+
+/*Контейнер, который задает размеры блоку навигации.*/
+.header {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background: #fff;
+}
+
+/*Также является контейнером, в нем уже выравниваются элементы внутри хедера.*/
+.navbar__wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 83.33%;
+    margin: 0 auto;
+    height: 60px;
+}
+
+/*Контейнер, в котором расположен логотип и название.*/
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+/*Логотип.*/
+.navbar-logo img {
+    width: 55px;
+    height: 55px;
+    margin-top: 3px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*Название.*/
+.navbar-logo a:last-of-type {
+    font-family: 'Monrope', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 130%;
+    color: #171717;
+    text-decoration: none;
+    margin-left: 3.49%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*Контейнер, в котором будет сама иконка бургер-меню.*/
+.hamb {
+    display: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*То, где будет отображаться информация после нажатия на кнопку бургер-меню.*/
+.popup {
+    display: none;
+}
+
+/*Контейнер, в котором расположены ссылки*/
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 420px;
+    position: relative;
+}
+
+/*Стилизация ссылок.*/
+.menu a {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #333333;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.menu a:hover {
+    color: #1749B3;
+    transition: 0.2s;
+    -moz-tansition: 0.2s;
+    -o-tansition: 0.2s;
+}
+
+/*Выпадающее меню в навигационной панели*/
+.menu label {
+   font-family: 'Gotham Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #333333;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.menu label:hover {
+  color: #1749B3;
+  transition: 0.2s;
+  -moz-tansition: 0.2s;
+  -o-tansition: 0.2s;
+}
+
+.menu ul {
+    position: absolute;
+    top: 68px; left: 0;
+    min-width: 170px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 48px rgba(177, 177, 177, 0.4);
+    border-radius: 16px;
+    padding: 27px 5px 24px 23px;
+    z-index: 2;
+}
+
+.menu li {
+    margin-bottom: 20px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.menu li:last-of-type {
+    margin-bottom: 0px;
+}
+
+.menu input, .menu ul {
+    display: none;
+}
+
+.menu input:checked ~ ul {
+    display: block;
+}
+
+/*Контейнер, в котором расположена кнопка "Log in".*/
+.log_in_button {
+    flex-basis: 145px;
+    order: 3;
+}
+
+/*Стилизация самой кнопки.*/
+.log_in_button button {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 130%;
+    color: #FFFFFF;
+    background: #1749B3;
+    padding: 9px 28.5%;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.log_in_button button:hover {
+  color: #171717;
+  background: #fff;
+  border: 1px solid #1749B3;
+  transition: 0.2s;
+  -moz-tansition: 0.2s;
+  -o-tansition: 0.2s;
+}
+
+@media (max-width: 1115px) {
+    .menu {
+        width: 340px;
+    }
+}
+
+@media (max-width: 960px) {
+    .header {
+        height: 54px;
+    }
+    .navbar {
+        height: 54px;
+    }
+    .navbar__wrap {
+        width: 91.28%;
+        height: 54px;
+    }
+    .navbar-logo img {
+        width: 40px;
+        height: 40px;
+        margin-top: 3px;
+    }
+    .menu {
+      display: none;
+    }
+    .log_in_button {
+        display: none;
+    }
+    .hamb {
+      display: flex;
+      align-items: center;
+      order: 2;
+    }
+    .hamb__field {
+      padding: 10px 0px 10px 20px;
+      cursor: pointer;
+    }
+    .bar {
+      display: block;
+      width: 25px;
+      height: 2px;
+      margin: 6px auto;
+      background-color: #070033;
+      transition: 0.2s;
+    }
+    .popup {
+      position: fixed;
+      /*top: 54px;*/
+      right: -100%;
+      width: 100%;
+      /*height: 100vh;*/
+      background-color: #ECF3FB;
+      z-index: 100;
+      display: flex;
+      transition: 0.3s;
+    }
+    .popup.open {
+      right: 0;
+    }
+    .hamb__field.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamb__field.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamb__field.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    body.noscroll {
+      overflow: hidden;
+    }
+}
+
+@media (max-width: 750px) {
+    html {
+        overflow-x: hidden;
+    }
+
+}
+
+@media (max-width: 525px) {
+    .navbar-logo a:last-of-type {
+        display: none;
+    }
+}
+
+/*Контейнер, в котором находится всё содержимое.*/
+.popup-nav-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: scroll;
+}
+
+/*Контейнер, в котором находятся блоки с информацией о сайте.*/
+.pnc-container-items {
+    display: flex;
+    flex-direction: column;
+    width: 87.20%;
+    margin: 0 auto;
+    min-height: 560px;
+    margin-top: 24px;
+    margin-bottom: 540px;
+}
+
+/*Часть бургер-меню, где расположены навиагционные ссылки по страницам сайта.*/
+.pncci-nav {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 28px rgba(177, 177, 177, 0.2);
+    border-radius: 12px;
+}
+
+.pncci-nav a:first-of-type {
+    margin-top: 16px;
+}
+.pncci-nav a:last-of-type {
+    margin-bottom: 16px;
+}
+
+.pncci-nav a {
+    display: flex;
+    align-items: center;
+    width: 90.21%;
+    margin: 0 auto;
+    margin-top: 0px;
+    border-radius: 8px;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #070033;
+    text-decoration: none;
+}
+
+.pncci-nav a svg {
+    height: 24px;
+    width: 24px;
+    padding: 15px 12px 17px 20px;
+    fill: #9C99AD;
+}
+
+.pncci-nav a:hover {
+    background: #F7F7F7;
+    transition: 0.2s;
+    -moz-tansition: 0.2s;
+    -o-tansition: 0.2s;
+}
+
+.pncci-nav a:hover svg {
+    fill: #4E33FF;
+    transition: 0.2s;
+    -moz-tansition: 0.2s;
+    -o-tansition: 0.2s;
+}
+
+/*Часть бургер-меню, где расположены ссылки на сервисы.*/
+.pncci-subs {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 28px rgba(177, 177, 177, 0.2);
+    border-radius: 12px;
+}
+
+.pncci-subs a:first-of-type {
+    margin-top: 16px;
+}
+
+.pncci-subs a:last-of-type {
+    margin-bottom: 16px;
+}
+
+.pncci-subs a {
+    display: flex;
+    align-items: center;
+    width: 90.21%;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 12px 0px 12px 22px;
+    border-radius: 8px;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #070033;
+    text-decoration: none;
+}
+
+.pncci-subs a:hover {
+    background: #F7F7F7;
+    transition: 0.2s;
+    -moz-tansition: 0.2s;
+    -o-tansition: 0.2s;
+}
+
+/*Часть, где расположены кнопки "Login" и "Sing Up"*/
+.pncci-autorization {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    width: 100%;
+}
+
+.pncci-autorization button {
+    font-family: 'Gotham Pro', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #1749B3;
+    border-radius: 12px;
+    border: none;
+}
+
+.pncci-autorization form:last-of-type button {
+    margin-top: 6px;
+}
+
+.pncci-autorization button:hover {
+    color: #1749B3;
+    background-color: #ECF3FB;
+    border: 1px solid #1749B3;
+    transition: 0.3s;
+    -moz-tansition: 0.3s;
+    -o-tansition: 0.3s;
+}
+
+/*Контейнер, в котором находится footer.*/
+footer {
+    width: 100%;
+    min-height: 259px;
+    background-color: #1749B3;
+    position: relative;
+}
+
+/*Настройка расположения всего, что связано с компанией.*/
+.footer-brand img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 40px; left: 8.33%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.footer-brand a:first-of-type {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ }
+
+.footer-brand a:last-of-type {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #FFFFFF;
+    text-decoration: none;
+    position: absolute;
+    top: 58px; left: 13.4%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.footer-brand p {
+    position: absolute;
+    top: 124px; left: 8.4%;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer-navigation p {
+    font-family: 'Gotham Pro';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.footer-navigation p:first-of-type {
+    position: absolute;
+    top: 40px; left: 35.39%;
+}
+
+.footer-navigation p:last-of-type {
+    position: absolute;
+    top: 40px; left: 60.62%;
+}
+
+.footer-navigation a {
+    font-family: 'Gotham Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #FFFFFF;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.footer-navigation a:hover {
+    font-weight: 500;
+}
+
+.footer-navigation a:first-of-type {
+    position: absolute;
+    top: 87px; left: 35.39%;
+}
+
+.footer-navigation a:nth-of-type(2) {
+    position: absolute;
+    top: 123px; left: 35.39%;
+}
+
+.footer-navigation a:nth-of-type(3) {
+    position: absolute;
+    top: 159px; left: 35.39%;
+}
+
+.footer-navigation a:nth-of-type(4) {
+    position: absolute;
+    top: 87px; left: 60.62%; 
+}
+
+.footer-navigation a:nth-of-type(5) {
+    position: absolute;
+    top: 123px; left: 60.62%;
+}
+
+.footer-navigation a:nth-of-type(6) {
+    position: absolute;
+    top: 159px; left: 60.62%;
+}
+
+/*Контейнер, в котором находятся ссылки на мессенджеры.*/
+.footer-messagers_1 svg {
+    width: 40px;
+    height: 40px;
+    fill: #fff;
+    position: absolute;
+    top: 40px; right: 8.4%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.footer-messagers_1 svg:hover {
+    fill: #229ED9;
+    scale: 1.2;
+    transition: 0.3s;
+    -moz-tansition: 0.3s;
+    -o-tansition: 0.3s;
+}
+
+.footer-messagers_2 svg {
+    width: 40px;
+    height: 40px;
+    fill: #fff;
+    position: absolute;
+    top: 40px; right: 12.29%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.footer-messagers_2 svg:hover {
+    fill: #25D366;
+    scale: 1.2;
+    transition: 0.3s;
+    -moz-tansition: 0.3s;
+    -o-tansition: 0.3s;
+}
+
+/*Контейнер, в котором находится дополнительная информация.*/
+.footer-info a {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #D3D3D3;
+    text-decoration: none;
+    position: absolute;
+    top: 223px; left: 8.4%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.footer-info p:first-of-type {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #D3D3D3;
+    position: absolute;
+    top: 223px; left: 50%;
+    transform: translate(-50%, 0%);
+}
+    
+.footer-info p:last-of-type {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #D3D3D3;
+    position: absolute;
+    top: 223px; right: 8.4%;
+}
+
+footer hr {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    border: 1px solid rgba(247, 247, 247, 0.5);
+    display: none;
+}
+
+@media all and (max-width: 1190px) {
+    .footer-brand a:last-of-type {
+        left: 14%;
+    }
+}
+
+@media all and (max-width: 1070px) {
+    .footer-brand a:last-of-type {
+        display: none;
+    }
+}
+
+@media all and (max-width: 950px) {
+    .footer-messagers_2 img {
+        right: 13%;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .footer-info a {
+        position: absolute;
+        top: 223px; left: 0%; right: 0%;
+        text-align: center;
+    }
+    .footer-info p:first-of-type {
+        font-family: 'Gotham Pro', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        color: #D3D3D3;
+        position: absolute;
+        top: 264px; left: 0%; right: 0%;
+        transform: none;
+        text-align: center;
+    }  
+    .footer-info p:last-of-type {
+        font-family: 'Gotham Pro', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        color: #D3D3D3;
+        position: absolute;
+        top: 243px; left: 0%; right: 0%;
+        text-align: center;
+        
+    }
+    footer {
+        min-height: 305px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .footer-messagers_1 svg {
+        display: none;
+    }
+    
+    .footer-messagers_2 svg {
+        display: none;
+    }
+}
+
+@media all and (max-width: 768px) {
+    footer {
+        min-height: 305px;
+    }
+    .footer-brand img {
+        width: 44px;
+        height: 44px;
+        top: 40px; left: 4.17%;
+    }
+    .footer-brand p {
+        top: 96px; left: 4.17%;
+        line-height: 150%;
+    }
+    .footer-navigation p:first-of-type {
+        top: 40px; left: 34.36%;
+    }
+    .footer-navigation p:last-of-type {
+        top: 40px; left: 60.68%;
+    }
+    .footer-navigation a:first-of-type {
+        position: absolute;
+        top: 87px; left: 34.64%;
+    }
+    .footer-navigation a:nth-of-type(2) {
+        position: absolute;
+        top: 123px; left: 34.64%;
+    }
+    .footer-navigation a:nth-of-type(3) {
+        position: absolute;
+        top: 159px; left: 34.64%;
+    }
+    .footer-navigation a:nth-of-type(4) {
+        position: absolute;
+        top: 87px; left: 60.68%; 
+    }
+    .footer-navigation a:nth-of-type(5) {
+        position: absolute;
+        top: 123px; left: 60.68%;
+    }
+    .footer-navigation a:nth-of-type(6) {
+        position: absolute;
+        top: 159px; left: 60.68%;
+    }
+    .footer-messagers_1 svg {
+        width: 26.6px;
+        height: 26.6px;
+        top: 42px; right: 4.3%;
+        display: block;
+    }
+    .footer-messagers_2 svg {
+        width: 26.6px;
+        height: 26.6px;
+        top: 42px; right: 9%;
+        display: block;
+    }
+    .footer-info a {
+        position: absolute;
+        top: 223px; left: 0%; right: 0%;
+        text-align: center;
+    }
+    .footer-info p:first-of-type {
+        position: absolute;
+        top: 264px; left: 0%; right: 0%;
+        text-align: center;
+    }
+    .footer-info p:last-of-type {
+        position: absolute;
+        top: 243px; left: 0%; right: 0%;
+        text-align: center;
+    }
+    footer hr {
+        display: inline;
+    }
+}
+
+@media all and (max-width: 660px) {
+    footer {
+        min-height: 524px;
+    }
+    .footer-brand img {
+        width: 44px;
+        height: 44px;
+        top: 40px; left: 6.38%;
+       
+    }
+    .footer-brand a:last-of-type {
+        display: inline;
+        top: 50px; left: 15%;
+    }
+    .footer-brand br {
+        display: none;
+    }
+    .footer-brand p {
+        position: absolute;
+        top: 96px; left: 6.38%;
+    }
+    .footer-navigation p:first-of-type {
+        position: absolute;
+        top: 160px; left: 20.30%;
+    }
+    .footer-navigation p:last-of-type {
+        position: absolute;
+        top: 160px; left: 60%;
+    }
+    .footer-navigation a:first-of-type {
+        position: absolute;
+        top: 207px; left: 20.30%;
+    }
+    .footer-navigation a:nth-of-type(2) {
+        position: absolute;
+        top: 243px; left: 20.30%;
+    }
+    .footer-navigation a:nth-of-type(3) {
+        position: absolute;
+        top: 279px; left: 20.30%;
+    }
+    .footer-navigation a:nth-of-type(4) {
+        position: absolute;
+        top: 207px; left: 60%; 
+    }
+    .footer-navigation a:nth-of-type(5) {
+        position: absolute;
+        top: 243px; left: 60%;
+    }
+    .footer-navigation a:nth-of-type(6) {
+        position: absolute;
+        top: 279px; left: 60%;
+    }
+    .footer-messagers_1 svg {
+        width: 33px;
+        height: 33px;
+        top: 345px; right: 0%; left: 6.91%;
+    }
+    .footer-messagers_2 svg {
+        width: 33px;
+        height: 33px;
+        top: 345px; right: 0%; left: 15%;
+    }
+    .footer-info a {
+        position: absolute;
+        top: 431px; left: 0%; right: 0%;
+        text-align: center;
+    }
+    .footer-info p:first-of-type {
+        position: absolute;
+        top: 462px; left: 0%; right: 0%;
+        text-align: center;
+    }
+    .footer-info p:last-of-type {
+        position: absolute;
+        top: 493px; left: 0%; right: 0%;
+        text-align: center;
+    }
+    footer hr {
+        top: 415px;
+        display: inline;
+    }
+}
+
+@media all and (max-width: 530px) {
+    .footer-brand a:last-of-type {
+        left: 17%;
+    }
+}
+
+@media all and (max-width: 470px) {
+    .footer-navigation p:first-of-type {
+        position: absolute;
+        top: 160px; left: 6.38%;
+    }
+    .footer-navigation p:last-of-type {
+        position: absolute;
+        top: 160px; left: 63%;
+    }
+    .footer-navigation a:first-of-type {
+        position: absolute;
+        top: 207px; left: 6.38%;
+    }
+    .footer-navigation a:nth-of-type(2) {
+        position: absolute;
+        top: 243px; left: 6.38%;
+    }
+    .footer-navigation a:nth-of-type(3) {
+        position: absolute;
+        top: 279px; left: 6.38%;
+    }
+    .footer-navigation a:nth-of-type(4) {
+        position: absolute;
+        top: 207px; left: 63%; 
+    }
+    .footer-navigation a:nth-of-type(5) {
+        position: absolute;
+        top: 243px; left: 63%;
+    }
+    .footer-navigation a:nth-of-type(6) {
+        position: absolute;
+        top: 279px; left: 63%;
+    }
+}
+
+@media all and (max-width: 435px) {
+    .footer-brand a:last-of-type {
+        left: 19%;
+    }
+    .footer-messagers_2 img {
+        left: 17%;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .footer-navigation p:last-of-type {
+        position: absolute;
+        top: 160px; left: 60%;
+    }
+    .footer-navigation a:nth-of-type(4) {
+        position: absolute;
+        top: 207px; left: 60%; 
+    }
+    .footer-navigation a:nth-of-type(5) {
+        position: absolute;
+        top: 243px; left: 60%;
+    }
+    .footer-navigation a:nth-of-type(6) {
+        position: absolute;
+        top: 279px; left: 60%;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .footer-brand a:last-of-type {
+        left: 21%;
+    }
+    .footer-messagers_2 img {
+        left: 19%;
+    }
+}

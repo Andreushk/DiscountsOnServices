@@ -1,0 +1,526 @@
+/*Область, которая находится за пределами popup'а регистрации.*/
+.log_in_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    z-index: 100;
+}
+
+.log_in_background.active {
+    opacity: 1;
+    pointer-events: all;
+    -webkit-transition: 0.4s all;
+    -o-transition: 0.4s all;
+    transition: 0.4s all;
+}
+
+/*Контейнер, в котором расположен popup.*/
+.log_in_wrapper {
+    width: 540px;
+    min-height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+        -ms-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    background: #fff; 
+    border-radius: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: column; 
+            flex-direction: column; 
+}
+
+.log_in_wrapper.active {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+/*SVG картинка закрытия popup'а.*/
+.close-popup {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*Заголовок popup'а*/
+.title-log_in {
+    width: 85.19%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.title-log_in p:first-of-type {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 140%;
+    color: #000000;
+}
+
+.title-log_in p:last-of-type {
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+    margin-top: 12px;
+}
+
+.title-log_in a:first-of-type {
+    color: #1749B3;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*Контейнер, в котором расположна "форма" для регистрации.*/
+.form-log_in {
+    width: 85.19%;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+}
+
+.form-log_in label {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #1B1B29;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.form-log_in input {
+    width: 96.75%;
+    min-height: 54px;
+    border: none;
+    background: #F1F4F8;
+    border-radius: 12px;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 130%;
+    color: #1B1B29;
+    padding: 0 0 0 15px;
+    margin-top: 9px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.form-log_in div:first-of-type {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.form-log_in div:first-of-type span {
+    width: 58.48%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+
+.form-log_in div:first-of-type a {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #0F0F0F;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button#log-in-btn {
+    width: 41.52%;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+    color: #FFFFFF;
+    padding: 15px 55px;
+    background: #1749B3;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button#log-in-btn:hover {
+    color: #1749B3;
+    background: #fff;
+    border: 1px solid #1749B3;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+/*Разделитель контента.*/
+.delimiter-log_in {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 85.19%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.delimiter-log_in hr {
+    width: 34.78%;
+    border: 1px solid #DFDFDF;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+
+.delimiter-log_in p {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 150%;
+    color: #919191;
+}
+
+/*Контейнер, в котором расположены кнопки входа при помощи соц. сетей.*/
+.entering_with_socmed {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 85.19%;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.entering_with_socmed button {
+    width: 147px;
+    height: 70px;
+    background-color: #fff;
+    border: 1px solid #DFDFDF;
+    border-radius: 12px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.google {
+    width: 32px;
+    height: 32px;
+}
+
+.facebook {
+    width: 32px;
+    height: 32px;
+}
+
+.apple {
+    width: 32px;
+    height: 39px;
+}
+
+/*Контейнер с информацией.*/
+.info-log_in {
+    width: 85.19%;
+    margin: 0 auto;
+    margin-top: 48px;
+    margin-bottom: 42px;
+}
+
+.info-log_in p {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #9C99AD;
+}
+
+.info-log_in a {
+    color: #1749B3;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media all and (max-width: 1200px) {
+    .title-log_in {
+        margin-top: 30px;
+    }
+    .close-popup {
+        top: 30px;
+    }
+    .title-log_in p:last-of-type {
+        margin-top: 5px;
+    }
+    .form-log_in {
+        margin-top: 30px;
+    }
+    .form-log_in br:nth-of-type(3) {
+        display: none;
+    }
+    .form-log_in div:first-of-type {
+        margin-top: 20px;
+    }
+    .delimiter-log_in {
+        margin-top: 30px;
+    }
+    .entering_with_socmed {
+        margin-top: 10px;
+    }
+    .info-log_in {
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+}
+
+@media all and (max-width: 1050px) {
+    .log_in_wrapper {
+        border-radius: 24px;
+    }
+    .title-log_in {
+        margin-top: 20px;
+    }
+    .close-popup {
+        top: 20px;
+    }
+    .title-log_in p:last-of-type {
+        margin-top: 0px;
+    }
+    .form-log_in {
+        margin-top: 25px;
+    }
+    .form-log_in div:first-of-type {
+        margin-top: 25px;
+    }
+    .delimiter-log_in {
+        margin-top: 35px;
+    }
+    .entering_with_socmed {
+        margin-top: 5px;
+    }
+    .info-log_in {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 760px) {
+    .log_in_background {
+        -webkit-transition: 0.1s all;
+        -o-transition: 0.1s all;
+        transition: 0.1s all;
+    }
+    .log_in_background.active {
+        -webkit-transition: 0.1s all;
+        -o-transition: 0.1s all;
+        transition: 0.1s all;
+    }
+    .log_in_wrapper {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+        -webkit-transition: 0.1s all;
+        -o-transition: 0.1s all;
+        transition: 0.1s all;
+        border-radius: 0px;
+    }
+    .log_in_wrapper.active {
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+        -webkit-transition: 0.1s all;
+        -o-transition: 0.1s all;
+        transition: 0.1s all;
+    }
+    .title-log_in {
+        margin-top: 40px;
+    }
+    .close-popup {
+        top: 40px;
+        right: 8.4%;
+    }
+    .title-log_in p:last-of-type {
+        margin-top: 10px;
+    }
+    .form-log_in {
+        margin-top: 40px;
+    }
+    .form-log_in div:first-of-type {
+        margin-top: 40px;
+    }
+    .delimiter-log_in {
+        margin-top: 40px;
+    }
+    .entering_with_socmed {
+        margin-top: 25px;
+        width: 70%;
+    }
+    .info-log_in {
+        margin-top: 45px;
+        margin-bottom: 40px;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .entering_with_socmed {
+        width: 85%;
+    }
+}
+
+@media all and (max-width: 535px) {
+    .entering_with_socmed button {
+        width: 130px;
+    }
+    .delimiter-log_in hr {
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 475px) {
+    .entering_with_socmed button {
+        width: 115px;
+    }
+    .form-log_in div:first-of-type span {
+        width: 55%;
+    }
+    button#log-in-btn {
+        width: 45%;
+    }
+}
+
+@media all and (max-width: 440px) {
+    .title-log_in {
+        margin-top: 35px;
+    }
+    .close-popup {
+        top: 35px;
+    }
+    .title-log_in p:last-of-type {
+        margin-top: 5px;
+    }
+    .form-log_in {
+        margin-top: 30px;
+    }
+    .form-log_in br:nth-of-type(3) {
+        display: none;
+    }
+    .form-log_in div:first-of-type {
+        margin-top: 20px;
+    }
+    .delimiter-log_in {
+        margin-top: 30px;
+    }
+    .entering_with_socmed {
+        margin-top: 10px;
+    }
+    .info-log_in {
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+    .form-log_in div:first-of-type {
+        width: 80%;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .form-log_in div:first-of-type span {
+        width: 100%;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        text-align: center;
+        margin-top: 20px;
+    }
+    button#log-in-btn {
+        width: 100%;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        margin-top: 35px;
+    }
+}
+
+@media all and (max-width: 425px) {
+    .entering_with_socmed button {
+        width: 110px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .entering_with_socmed button {
+        width: 95px;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .title-log_in {
+        margin-top: 25px;
+    }
+    .close-popup {
+        top: 25px;
+    }
+    .title-log_in p:last-of-type {
+        margin-top: 0px;
+    }
+    .form-log_in {
+        margin-top: 25px;
+    }
+    .form-log_in br:nth-of-type(3) {
+        display: none;
+    }
+    .form-log_in div:first-of-type {
+        margin-top: 15px;
+    }
+    button#log-in-btn {
+        margin-top: 15px;
+    }
+    .delimiter-log_in {
+        margin-top: 25px;
+    }
+    .entering_with_socmed {
+        margin-top: 10px;
+    }
+    .info-log_in {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media all and (max-width: 350px) {
+    .entering_with_socmed button {
+        width: 90px;
+    }
+}

@@ -1,0 +1,1051 @@
+/*Контейнер, в котором расположен выбор подписки на YouTube.*/
+.youtube-container {
+    width: 100%;
+    background-color: #ECF3FB;
+}
+
+/*Заголовок.*/
+.youtube-container h1:first-of-type {
+    font-family: 'Gotham Pro';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: center;
+    color: #171717;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.youtube-container p:first-of-type {
+    font-family: 'Gotham Pro';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    color: #333333;
+}
+
+.youtube-container p:first-of-type br:last-of-type {
+    display: none;
+}
+
+.youtube-container span {
+    color: #1749B3;
+}
+
+/*Контейнер, в котором располагаются варианты подписки.*/
+.subscriptions-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 795px;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+/*Левый блок/YouTube Music.*/
+.youtube-music {
+    -webkit-box-flex: 48.99%;
+        -ms-flex: 48.99% 0 0px;
+            flex: 48.99% 0 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+            box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+    border-radius: 32px; 
+    margin-bottom: 20px;
+}
+
+.youtube-music h2{
+    font-family: 'Gotham Pro';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: center;
+    color: #0F0F0F;
+    margin-top: 60px;
+    margin-bottom: 32px;
+}
+
+.youtube-music  span {
+    color: #0F0F0F;
+}
+
+.youtube-music hr {
+    border: 1px solid #DBDBDB;
+}
+
+.youtube-music div:first-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 78.41%;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+
+.youtube-music div:first-of-type p {
+    width: 85.11%;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #5C5C5C;
+    text-align: left;
+    margin: 0px 0px 0px 3.87%;
+}
+
+.youtube-music div:first-of-type svg {
+    width: 32px;
+    height: 32px;
+    fill: #5C5C5C;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+}
+
+.youtube-music:hover div:first-of-type svg {
+    fill: #33CC33;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+
+.youtube-music div:nth-of-type(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 136px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.youtube-music div:nth-of-type(2) p:first-of-type {
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 130%;
+    color: #0F0F0F;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 0;
+}
+
+.youtube-music div:nth-of-type(2) p:last-of-type {
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 100%;
+    color: #0F0F0F;
+}
+
+.youtube-music div:nth-of-type(3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 79.43%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.youtube-music div:nth-of-type(3) a {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 130%;
+    color: #FFFFFF;
+    background: #333333;
+    border-radius: 12px;
+    text-decoration: none;
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.youtube-music div:nth-of-type(3) a:hover {
+    background: #1749B3;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+/*Правый блок/YouTube Premium.*/
+.youtube-premium {
+    -webkit-box-flex: 48.99%;
+        -ms-flex: 48.99% 0 0px;
+            flex: 48.99% 0 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+            box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+    border-radius: 32px;
+    margin-bottom: 20px; 
+}
+
+.youtube-premium h2{
+    font-family: 'Gotham Pro';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: center;
+    color: #0F0F0F;
+    margin-top: 60px;
+    margin-bottom: 32px;
+}
+
+.youtube-premium  span {
+    color: #0F0F0F;
+}
+
+.youtube-premium hr {
+    border: 1px solid #DBDBDB;
+}
+
+.youtube-premium div:first-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 78.41%;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+
+.youtube-premium div:first-of-type svg {
+    width: 32px;
+    height: 32px;
+    fill: #5C5C5C;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+}
+
+.youtube-premium:hover div:first-of-type svg {
+    fill: #33CC33;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.youtube-premium div:first-of-type p {
+    width: 85.11%;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #5C5C5C;
+    text-align: left;
+    margin: 0px 0px 0px 3.87%;
+}
+
+.youtube-premium div:nth-of-type(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 112px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.youtube-premium div:nth-of-type(2) p:first-of-type {
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 130%;
+    color: #0F0F0F;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 0;
+}
+
+.youtube-premium div:nth-of-type(2) p:last-of-type {
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 100%;
+    color: #0F0F0F;
+}
+
+.youtube-premium div:nth-of-type(3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 79.43%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.youtube-premium div:nth-of-type(3) a {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 130%;
+    color: #FFFFFF;
+    background: #333333;
+    border-radius: 12px;
+    text-decoration: none;
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.youtube-premium div:nth-of-type(3) a:hover {
+    background: #1749B3;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+@media all and (max-width: 1050px) {
+    .youtube-premium:hover div:first-of-type svg {
+        fill: #5C5C5C;
+        -webkit-transition: 0.0s;
+        transition: 0.0s;
+        -moz-transition: 0.0s;
+        -o-transition: 0.0s;
+    }
+    .youtube-music:hover div:first-of-type svg {
+        fill: #5C5C5C;
+        -webkit-transition: 0.0s;
+        transition: 0.0s;
+        -moz-transition: 0.0s;
+        -o-transition: 0.0s;
+    }
+}
+
+@media all and (max-width: 970px) {
+    .subscriptions-container {
+        width: 81.96%;
+    }
+    .navbar__wrap {
+        width: 81.96%;
+    }
+}
+
+@media all and (max-width: 877px) {
+    .youtube-music div:nth-of-type(2) {
+        margin-top: 112px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .youtube-music  span {
+        display: none;
+    }
+    .navbar__wrap {
+        width: 91.67%;
+    }
+    .youtube-container h1:first-of-type {
+        font-size: 28px;
+        padding-top: 52px;
+        padding-bottom: 16px;
+    }
+    .youtube-container p:first-of-type {
+        font-size: 17px;
+    }
+    .subscriptions-container {
+        width: 464px;
+        margin-top: 32px;
+    }
+    .youtube-music {
+        -webkit-box-flex: 48.28%;
+            -ms-flex: 48.28% 0 0px;
+                flex: 48.28% 0 0;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        border-radius: 24px; 
+    }
+    .youtube-music h2{
+        font-size: 25px;
+        margin-top: 32px;
+        margin-bottom: 20px;
+    }  
+    .youtube-music div:first-of-type {
+        width: 86.61%;
+        margin-top: 21px;
+    }
+    .youtube-music div:first-of-type p {
+        font-size: 15px;
+        margin-left: 3.87%;
+    }
+    .youtube-music div:first-of-type img {
+        width: 24px;
+        height: 24px;
+    }
+    .youtube-music div:nth-of-type(2) {
+        margin-top: 81px;
+    }
+    .youtube-music div:nth-of-type(2) p:first-of-type {
+        font-size: 20px;
+    }
+    .youtube-music div:nth-of-type(2) p:last-of-type {
+        font-size: 40px;
+    }
+    .youtube-music div:nth-of-type(3) {
+        width: 85.71%;
+        margin-top: 23px;
+        margin-bottom: 32px;
+    }
+    .youtube-music div:nth-of-type(3) a {
+        font-size: 15px;
+        padding: 14px 0;
+    }
+    .youtube-premium  span {
+        display: none;
+    }
+    .youtube-premium h1:first-of-type {
+        font-size: 28px;
+        padding-top: 52px;
+        padding-bottom: 16px;
+    }
+    .youtube-premium p:first-of-type {
+        font-size: 17px;
+    }
+    .youtube-premium {
+        -webkit-box-flex: 48.28%;
+            -ms-flex: 48.28% 0 0px;
+                flex: 48.28% 0 0;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        border-radius: 24px; 
+    }
+    .youtube-premium h2{
+        font-size: 25px;
+        margin-top: 32px;
+        margin-bottom: 20px;
+    }  
+    .youtube-premium div:first-of-type {
+        width: 86.61%;
+        margin-top: 21px;
+    }
+    .youtube-premium div:first-of-type p {
+        font-size: 15px;
+        margin-left: 3.87%;
+    }
+    .youtube-premium div:first-of-type img {
+        width: 24px;
+        height: 24px;
+    }
+    .youtube-premium div:nth-of-type(2) {
+        margin-top: 58px;
+    }
+    .youtube-premium div:nth-of-type(2) p:first-of-type {
+        font-size: 20px;
+    }
+    .youtube-premium div:nth-of-type(2) p:last-of-type {
+        font-size: 40px;
+    }
+    .youtube-premium div:nth-of-type(3) {
+        width: 85.71%;
+        margin-top: 23px;
+        margin-bottom: 32px;
+    }
+    .youtube-premium div:nth-of-type(3) a {
+        font-size: 15px;
+        padding: 14px 0;
+    }
+}
+
+@media all and (max-width: 580px) {
+    .subscriptions-container {
+        width: 87.47%;
+        margin-top: 28px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .navbar__wrap {
+        width: 87.47%;
+    }
+    .youtube-music span {
+        display: inline;
+    }
+    .youtube-container h1:first-of-type {
+        padding-top: 48px;
+    }
+    .youtube-music {
+        -webkit-box-flex: 100%;
+            -ms-flex: 100% 0 0px;
+                flex: 100% 0 0;
+        margin-bottom: 16px;
+    }
+    .youtube-music div:first-of-type {
+        width: 87.20%;
+    }
+    .youtube-music div:nth-of-type(2) {
+        margin-top: 48px;
+    }
+    .youtube-music div:nth-of-type(3) {
+        width: 90.24%;;
+    }
+    .youtube-premium {
+        -webkit-box-flex: 100%;
+            -ms-flex: 100% 0 0px;
+                flex: 100% 0 0;
+        margin-bottom: 16px;
+    }
+    .youtube-premium span {
+        display: inline;
+    }
+    .youtube-premium h1:first-of-type {
+        padding-top: 48px;
+    }
+    .youtube-premium {
+        -webkit-box-flex: 100%;
+            -ms-flex: 100% 0 0px;
+                flex: 100% 0 0;
+        margin-bottom: 16px;
+    }
+    .youtube-premium div:first-of-type {
+        width: 87.20%;
+    }
+    .youtube-premium div:nth-of-type(2) {
+        margin-top: 48px;
+    }
+    .youtube-premium div:nth-of-type(3) {
+        width: 90.24%;;
+    }
+    .youtube-container p:first-of-type br:last-of-type {
+        display: inline;
+    }
+    .youtube-premium div:nth-of-type(3) a {
+        background: #1749B3;
+    }
+    .youtube-music div:nth-of-type(3) a {
+        background: #1749B3;
+    }
+}   
+
+/*Оформление блока страницы Invite friends.*/
+.container_invite_friends {
+    width: 100%;
+    background-color: #ECF3FB;
+}
+
+/*Блок Invite friends.*/
+.invite_friends {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 83.33%;
+    margin: 0 auto;
+    background-color: #1749B3;
+    -webkit-box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
+            box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
+    border-radius: 32px;
+}
+
+/*Левая часть блока Invite friends.*/
+.invite_friends_left {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+}
+
+.invite_friends_left h1 {
+    font-family: 'Gotham Pro';
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-top: 44px;
+    margin-left: 13.33%;
+    margin-right: 13.33%;
+}
+
+.invite_friends_left p {
+    font-family: 'Gotham Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-top: 24px;
+    margin-left: 13.33%;
+    margin-right: 13.33%;
+    margin-bottom: 44px;
+}
+
+/*Правая часть блока Invite friends.*/
+.invite_friends_right {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+
+.invite_friends_right-item {
+    width: 74.17%;
+    height: 123px;
+    background: #F1F4F8;
+    border-radius: 16px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.invite_friends_right-item p {
+    font-family: 'Gotham Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: center;
+    color: #171717;
+    position: absolute;
+    top: 28px; left: 0; right: 0;
+}
+
+.invite_friends_right-item a {
+    font-family: 'Gotham Pro';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #1749B3;
+    cursor: pointer;
+    position: absolute;
+    top: 66px; left: 0; right: 0;
+    -webkit-animation: Animation1 5s infinite;
+            animation: Animation1 5s infinite;
+}
+
+@-webkit-keyframes Animation1
+{
+    from { color: #1749B3; }
+    to { color: #b61515; }
+}
+
+@keyframes Animation1
+{
+    from { color: #1749B3; }
+    to { color: #b61515; }
+}
+
+@media all and (max-width: 1005px) {
+    .invite_friends_left {
+        -ms-flex-preferred-size: 40%;
+            flex-basis: 40%;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+    }
+    .invite_friends_right {
+        -ms-flex-preferred-size: 60%;
+            flex-basis: 60%;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+    }
+}
+
+@media all and (max-width: 765px) {
+    .invite_friends_none {
+        height: 16px;
+    }
+    .invite_friends {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 87.20%;
+        min-height: 300px;
+        border-radius: 24px;
+    }
+    .invite_friends_left {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    }
+    .invite_friends_left h1 {
+        font-size: 22px;
+        margin-top: 32px;
+        margin-left: 6.12%;
+        margin-right: 6.12%;
+    }
+    .invite_friends_left p {
+        margin-top: 16px;
+        margin-left: 6.12%;
+        margin-right: 6.12%;
+        margin-bottom: 32px;
+    }
+    .invite_friends_right {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        min-width: 100%;
+        min-height: 150px;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+    }
+    .invite_friends_right-item {
+        width: 87.77%;
+        height: 114px;
+    }
+    .invite_friends_right-item p { 
+        font-size: 18px;
+        top: 28px; left: 0; right: 0;
+    }
+    .invite_friends_right-item a {
+        font-size: 18px;
+        top: 65px; left: 0; right: 0;
+    }
+}
+
+/*Блок, в котором расположены часто задаваемые вопросы.*/
+.container-FAQ {
+    width: 100%;
+    background-color: #ECF3FB;
+}
+
+/*Заголовок.*/
+.container-FAQ h1 {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
+    color: #171717;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+/*Контейнер, в котором находятся сами вопросы.*/
+.FAQ-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 83.33%;
+    margin: 0 auto;
+}
+
+/*Блок с вопросом.*/
+.FAQ-item {
+    position: relative;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-top: 16px;
+    background-color: white;
+    border-radius: 32px;
+    -webkit-box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+            box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.FAQ-item:first-of-type {
+    margin-top: 0px;
+}
+
+/*Текст ответов в блоке FAQ.*/
+.FAQ-text {
+    font-family: 'Gotham Pro', sans-serif; 
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+    line-height: 150%;
+    margin-left: 3.33%;
+    margin-right: 3.33%;
+    padding-bottom: 35px;
+    display: none;
+}
+
+/*Текст вопросов в блоке FAQ.*/
+.FAQ-title {
+    font-family: 'Gotham Pro', sans-serif; 
+    font-weight: 600;
+    font-size: 18px;
+    color: #171717;
+    line-height: 150%;
+    display: block;
+    padding-top: 39px;
+    padding-bottom: 38px;
+    margin-left: 3.33%;
+    margin-right: 12%;
+    cursor: pointer;
+}
+
+/*Расположение картинки открытия ответа*/
+.FAQ-title svg:first-of-type {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 3.33%;
+    top: 33px;
+}
+
+/*Расположение картинки закрытия ответа*/
+.FAQ-title svg:last-of-type {
+    width: 40px;
+    height: 40px;
+    display: none;
+    position: absolute;
+    right: 3.33%;
+    top: 33px;
+}
+
+/*При нажатии на вопрос или картинку, отмечается чекбокс и картинка меняется на противоположную, путём скрытия картинки развертывания...*/
+.FAQ-input:checked ~ .FAQ-title svg:first-of-type {
+    display: none;
+}
+
+/*... и отображения картинки свертывания.*/
+.FAQ-input:checked ~ .FAQ-title svg:last-of-type {
+    display: inline;
+}
+
+/*Скрытие чекбокса*/
+.FAQ-input {
+    width: 0;
+    height: 0;
+    -moz-appearance: none;
+         appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+}
+
+/*При нажатии на вопрос или стрелочку "развертывания" отображается ответ на вопрос.*/
+.FAQ-input:checked ~ .FAQ-text {
+    display: block;
+}
+
+/*Кнопка Support.*/
+.container-FAQ button {
+    width: 243px;
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-family: 'Gotham Pro', sans-serif; 
+    font-weight: 700; 
+    font-size: 17px;
+    border: none; 
+    border-radius: 16px;
+    background: #333333; 
+    color: #FFFFFF;
+    cursor: pointer; 
+}
+
+.container-FAQ button:hover {
+    background-color: #ECF3FB;
+    color: #333333;
+    border: 2px solid #333333;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+/*Пустой контейнер, чтобы задать отступ от кнопки до футера.*/
+.FAQ-none-end {
+    width: 100%;
+    height: 120px;
+}
+
+@media all and (max-width: 1200px) {
+    .FAQ-container {
+        width: 92.06%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .container-FAQ h1 {
+        font-size: 25px;
+        line-height: 140%;
+        padding-top: 80px;
+        padding-bottom: 32px;
+    }
+    .FAQ-container {
+        width: 91.67%;
+    }
+    .FAQ-item {
+        border-radius: 24px;
+    }
+    .FAQ-text {
+        font-size: 16px;
+        margin-left: 2.84%;
+        margin-right: 2.84%;
+        padding-bottom: 20px;
+    }
+    .FAQ-title {
+        font-size: 17px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        margin-left: 2.84%;
+    }
+    .FAQ-title svg:first-of-type {
+        right: 2.84%;
+        top: 20px;
+    }
+    .FAQ-title svg:last-of-type {
+        right: 2.84%;
+        top: 20px;
+    }
+    .container-FAQ button {
+        margin-top: 32px;
+    }
+    .FAQ-none-end {
+        height: 100px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .container-FAQ h1 {
+        padding-bottom: 28px;
+    }
+    .FAQ-container {
+        width: 87.20%;
+    }
+    .FAQ-text {
+        margin-left: 6.73%;
+        margin-right: 6.73%;
+        padding-bottom: 20px;
+    }
+    .FAQ-title {
+        padding-top: 27px;
+        padding-bottom: 27px;
+        margin-left: 6.73%;
+        margin-right: 16%;
+    }
+    .FAQ-title svg:first-of-type {
+        right: 6.73%;
+    }
+    .FAQ-title svg:last-of-type {
+        right: 6.73%;
+    }
+    .FAQ-item:nth-of-type(4) svg:first-of-type {
+        top: 30px;
+    }
+    .FAQ-item:nth-of-type(4) svg:last-of-type {
+        top: 30px;
+    }
+}
+
+@media all and (max-width: 670px) {
+    .FAQ-item:nth-of-type(2) svg:first-of-type {
+        top: 30px;
+    }
+    .FAQ-item:nth-of-type(2) svg:last-of-type {
+        top: 30px;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .FAQ-title {
+        margin-right: 19%;
+    }
+}
+
+@media all and (max-width: 551px) {
+    .FAQ-item:nth-of-type(3) svg:first-of-type {
+        top: 30px;
+    }
+    .FAQ-item:nth-of-type(3) svg:last-of-type {
+        top: 30px;
+    }
+}
+
+@media all and (max-width: 475px) {
+    .FAQ-title {
+        margin-right: 21%;
+    }
+}
+
+@media all and (max-width: 458px) {
+    .FAQ-item:nth-of-type(4) svg:first-of-type {
+        top: 45px;
+    }
+    .FAQ-item:nth-of-type(4) svg:last-of-type {
+        top: 45px;
+    }
+}
+
+@media all and (max-width: 436px) {
+    .FAQ-item:nth-of-type(2) svg:first-of-type {
+        top: 45px;
+    }
+    .FAQ-item:nth-of-type(2) svg:last-of-type {
+        top: 45px;
+    }
+}
+
+@media all and (max-width: 370px) {
+    .FAQ-title {
+        margin-right: 24%;
+    }
+    .container-FAQ button {
+        margin-top: 28px;
+    }
+}
+
+@media all and (max-width: 370px) {
+    .FAQ-item:nth-of-type(5) svg:first-of-type {
+        top: 30px;
+    }
+    .FAQ-item:nth-of-type(5) svg:last-of-type {
+        top: 30px;
+    }
+}
+
+@media all and (max-width: 336px) {
+    .FAQ-item:nth-of-type(3) svg:first-of-type {
+        top: 45px;
+    }
+    .FAQ-item:nth-of-type(3) svg:last-of-type {
+        top: 45px;
+    }
+}

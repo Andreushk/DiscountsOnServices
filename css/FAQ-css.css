@@ -1,0 +1,366 @@
+/*Контейнер, который содержит в себе основную информацию странички.*/
+main {
+    width: 100%;
+    background-color: #ECF3FB;
+}
+
+/*Заголовок старнички.*/
+main h1 {
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: center;
+    color: #171717;
+    padding-top: 80px;
+    padding-bottom: 48px;
+}
+
+/*Контейнер, в котором находятся сами вопросы.*/
+.FAQ-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 83.33%;
+    margin: 0 auto;
+}
+
+/*Блок с вопросом.*/
+.FAQ-item {
+    position: relative;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-top: 16px;
+    background-color: white;
+    border-radius: 32px;
+    -webkit-box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+            box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.FAQ-item:first-of-type {
+    margin-top: 0px;
+}
+
+/*Текст ответов в блоке FAQ.*/
+.FAQ-text {
+    font-family: 'Gotham Pro', sans-serif; 
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+    line-height: 150%;
+    margin-left: 3.33%;
+    margin-right: 3.33%;
+    padding-bottom: 35px;
+    display: none;
+}
+
+/*Текст вопросов в блоке FAQ.*/
+.FAQ-title {
+    font-family: 'Gotham Pro', sans-serif; 
+    font-weight: 600;
+    font-size: 18px;
+    color: #171717;
+    line-height: 150%;
+    display: block;
+    padding-top: 39px;
+    padding-bottom: 38px;
+    margin-left: 3.33%;
+    margin-right: 12%;
+    cursor: pointer;
+}
+
+/*Расположение картинки открытия ответа*/
+.FAQ-title svg:first-of-type {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 3.33%;
+    top: 33px;
+}
+
+/*Расположение картинки закрытия ответа*/
+.FAQ-title svg:last-of-type {
+    width: 40px;
+    height: 40px;
+    display: none;
+    position: absolute;
+    right: 3.33%;
+    top: 33px;
+}
+
+/*При нажатии на вопрос или картинку, отмечается чекбокс и картинка меняется на противоположную, путём скрытия картинки развертывания...*/
+.FAQ-input:checked ~ .FAQ-title svg:first-of-type {
+    display: none;
+}
+
+/*... и отображения картинки свертывания.*/
+.FAQ-input:checked ~ .FAQ-title svg:last-of-type {
+    display: inline;
+}
+
+/*Скрытие чекбокса*/
+.FAQ-input {
+    width: 0;
+    height: 0;
+    -moz-appearance: none;
+         appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+}
+
+/*При нажатии на вопрос или стрелочку "развертывания" отображается ответ на вопрос.*/
+.FAQ-input:checked ~ .FAQ-text {
+    display: block;
+}
+
+.support_button {
+    width: 243px;
+    min-height: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 79px;
+    padding-bottom: 120px;
+}
+
+.support_button a {
+    font-family: 'Gotham Pro', sans-serif; 
+    font-weight: 700; 
+    font-size: 17px; 
+    line-height: 130%;
+    text-decoration: none; 
+    border-radius: 16px;
+    padding: 16px 86.5px;
+    background: #333333; 
+    color: #FFFFFF; 
+}
+
+.support_button a:hover {
+    background-color: #ECF3FB;
+    color: #333333;
+    border: 2px solid #333333;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+@media all and (max-width: 1084px) {
+    .FAQ-item:nth-of-type(5) svg:first-of-type {
+        top: 45px;
+    }
+    .FAQ-item:nth-of-type(5) svg:last-of-type {
+        top: 45px;
+    }
+}
+
+@media all and (max-width: 986px) {
+    .FAQ-item:nth-of-type(4) svg:first-of-type {
+        top: 45px;
+    }
+    .FAQ-item:nth-of-type(4) svg:last-of-type {
+        top: 45px;
+    }
+}
+
+@media (max-width: 960px) {
+    .navbar__wrap {
+        width: 83.33%;
+    }
+}
+
+@media all and (max-width: 779px) {
+    .FAQ-item:nth-of-type(7) svg:first-of-type {
+        top: 45px;
+    }
+    .FAQ-item:nth-of-type(7) svg:last-of-type {
+        top: 45px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    main h1 {
+        font-size: 28px;
+        padding-top: 52px;
+        padding-bottom: 48px;
+    }
+    .FAQ-container {
+        width: 91.67%;
+    }
+    .navbar__wrap {
+        width: 91.67%;
+    }
+    .FAQ-item {
+        border-radius: 24px;
+    }
+    .FAQ-text {
+        font-size: 16px;
+        margin-left: 2.84%;
+        margin-right: 2.84%;
+        padding-bottom: 20px;
+    }
+    .FAQ-title {
+        font-size: 17px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        margin-left: 2.84%;
+    }
+    .FAQ-title svg:first-of-type {
+        right: 2.84%;
+        top: 20px;
+    }
+    .FAQ-title svg:last-of-type {
+        right: 2.84%;
+        top: 20px;
+    }
+    .support_button {
+        min-height: 48px;
+        margin-top: 54px;
+        padding-bottom: 100px;
+    }
+    .support_button a {
+        padding: 13px 86.5px;
+    }
+    .FAQ-item:nth-of-type(4) svg:first-of-type {
+        top: 33px;
+    }
+    .FAQ-item:nth-of-type(4) svg:last-of-type {
+        top: 33px;
+    }
+    .FAQ-item:nth-of-type(5) svg:first-of-type {
+        top: 33px;
+    }
+    .FAQ-item:nth-of-type(5) svg:last-of-type {
+        top: 33px;
+    }
+    .FAQ-item:nth-of-type(7) svg:first-of-type {
+        top: 20px;
+    }
+    .FAQ-item:nth-of-type(7) svg:last-of-type {
+        top: 20px;
+    }
+}
+
+@media all and (max-width: 665px) {
+    .FAQ-item:nth-of-type(7) svg:first-of-type {
+        top: 33px;
+    }
+    .FAQ-item:nth-of-type(7) svg:last-of-type {
+        top: 33px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .FAQ-title {
+        margin-right: 19%;
+    }
+    .FAQ-item:nth-of-type(2) svg:first-of-type {
+        top: 33px;
+    }
+    .FAQ-item:nth-of-type(2) svg:last-of-type {
+        top: 33px;
+    }
+    .FAQ-item:nth-of-type(5) svg:first-of-type {
+        top: 45px;
+    }
+    .FAQ-item:nth-of-type(5) svg:last-of-type {
+        top: 45px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .FAQ-container {
+        width: 87.20%;
+    }
+    .navbar__wrap {
+        width: 87.20%;
+    }
+    .FAQ-text {
+        margin-left: 6.73%;
+        margin-right: 6.73%;
+        padding-bottom: 20px;
+    }
+    .FAQ-title {
+        padding-top: 27px;
+        padding-bottom: 27px;
+        margin-left: 6.73%;
+        margin-right: 16%;
+    }
+    .FAQ-title svg:first-of-type {
+        right: 6.73%;
+    }
+    .FAQ-title svg:last-of-type {
+        right: 6.73%;
+    }
+    .FAQ-item:nth-of-type(4) svg:first-of-type {
+        top: 45px;
+    }
+    .FAQ-item:nth-of-type(4) svg:last-of-type {
+        top: 45px;
+    }
+    .FAQ-item:nth-of-type(3) svg:first-of-type {
+        top: 33px;
+    }
+    .FAQ-item:nth-of-type(3) svg:last-of-type {
+        top: 33px;
+    }
+    .FAQ-title {
+        margin-right: 21%;
+    }
+}
+
+@media all and (max-width: 436px) {
+    .FAQ-item:nth-of-type(2) svg:first-of-type {
+        top: 45px;
+    }
+    .FAQ-item:nth-of-type(2) svg:last-of-type {
+        top: 45px;
+    }
+}
+
+@media all and (max-width: 410px) {
+    .FAQ-item:nth-of-type(5) svg:first-of-type {
+        top: 55px;
+    }
+    .FAQ-item:nth-of-type(5) svg:last-of-type {
+        top: 55px;
+    }
+}
+
+@media all and (max-width: 414px) {
+    .FAQ-item:nth-of-type(7) svg:first-of-type {
+        top: 45px;
+    }
+    .FAQ-item:nth-of-type(7) svg:last-of-type {
+        top: 45px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .FAQ-title {
+        margin-right: 23%;
+    }
+    .FAQ-item:nth-of-type(4) svg:first-of-type {
+        top: 55px;
+    }
+    .FAQ-item:nth-of-type(4) svg:last-of-type {
+        top: 55px;
+    }
+}
+
+@media all and (max-width: 372px) {
+    .FAQ-item:nth-of-type(6) svg:first-of-type {
+        top: 33px;
+    }
+    .FAQ-item:nth-of-type(6) svg:last-of-type {
+        top: 33px;
+    }
+}
